@@ -1,0 +1,9 @@
+To view the published dashboard, visit https://schow99.shinyapps.io/unc_basketball/
+
+This is a personal project that employs R and RShiny to create a descriptive dashboard of UNC basketball statistics. It uses the BigBallR package for the data extraction.
+
+The data manipulation and presentation is done through the server.R and ui.R files, respectively. The app.R file is simply the server and ui files combined together, as I wanted to experiment with both ways of running an RShiny application.
+
+The LearningFunctions.R file is used to extract the data since the process takes a long time, and it pushes it into CSVs where the server side can quickly read the updated data.
+
+ 

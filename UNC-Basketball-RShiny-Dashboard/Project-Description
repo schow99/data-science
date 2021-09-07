@@ -6,3 +6,4 @@ The data manipulation and presentation is done through the server.R and ui.R fil
 
 The LearningFunctions.R file is used to extract the data since the process takes a long time, and it pushes it into CSVs where the server side can quickly read the updated data.
 
+ 

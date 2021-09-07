@@ -1,0 +1,364 @@
+ID,Date,Home,Away,Team,Player,MINS,POSS,FGM,FGA,FG.,TPM,TPA,TP.,FTM,FTA,FT.,RIMM,RIMA,RIM.,MIDM,MIDA,MID.,TS.,eFG.,PBACKM,PBACKA,PBACK.,ORB,DRB,AST,STL,BLK,TOV,PF,PTS,GS
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,ANDREW.PLATEK,25.199,46,3,4,0.75,2,2,1,0,0,0,0,0,0,1,2,0.5,1,1,0,0,0,2,2,2,0,0,1,1,8,8.4
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,ARMANDO.BACOT,22.416,41,3,7,0.429,0,0,0,1,6,0.167,3,4,0.75,0,3,0,0.355,0.429,1,1,1,2,6,1,0,1,2,2,7,3.1
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,BRANDON.HUFFMAN,1.117,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,CHRISTIAN.KEELING,21.3,40,2,4,0.5,1,3,0.333,0,0,0,0,0,0,1,1,1,0.625,0.625,0,0,0,1,0,0,0,0,5,0,5,-1.3
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,COLE.ANTHONY,36.733,67,12,24,0.5,6,11,0.545,4,5,0.8,1,3,0.333,5,10,0.5,0.645,0.625,0,0,0,0,11,5,1,0,4,2,34,24.6
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,GARRISON.BROOKS,38.716,70,4,7,0.571,0,0,0,2,3,0.667,4,5,0.8,0,2,0,0.593,0.571,1,1,1,3,6,2,1,3,3,3,10,10.5
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,JUSTIN.PIERCE,20.1,37,1,6,0.167,1,4,0.25,2,2,1,0,1,0,0,1,0,0.36,0.25,0,0,0,2,5,0,0,0,1,4,5,1.5
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,LEAKY.BLACK,32.684,60,2,7,0.286,0,0,0,1,1,1,0,2,0,2,5,0.4,0.334,0.286,0,0,0,1,6,5,0,0,1,3,5,4.7
+4868351,11/6/2019,North Carolina,Notre Dame,North Carolina,WALKER.MILLER,0.233,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,ANDREW.PLATEK,26.717,52,2,6,0.333,0,4,0,2,2,1,1,1,1,1,1,1,0.432,0.333,0,0,0,0,1,4,1,0,1,0,6,5.7
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,ARMANDO.BACOT,2.684,5,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,2,0,-2.2
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,BRANDON.HUFFMAN,7.449,14,2,3,0.667,0,0,0,0,1,0,1,1,1,1,2,0.5,0.576,0.667,0,0,0,2,2,0,0,1,1,1,4,3.6
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,CALEB.ELLIS,1.367,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,CHRISTIAN.KEELING,23.016,43,2,9,0.222,0,3,0,0,0,0,1,1,1,1,5,0.2,0.222,0.222,0,0,0,0,3,0,0,0,1,4,4,-3.2
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,COLE.ANTHONY,34,67,7,24,0.292,4,11,0.364,2,7,0.286,3,8,0.375,0,5,0,0.366,0.375,0,0,0,0,10,3,2,1,2,1,20,9.4
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,GARRISON.BROOKS,33.05,64,5,9,0.556,0,0,0,8,10,0.8,5,7,0.714,0,2,0,0.655,0.556,0,0,0,4,8,2,1,0,2,1,18,18.1
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,JUSTIN.PIERCE,32.733,65,7,12,0.583,4,7,0.571,0,4,0,1,1,1,2,4,0.5,0.647,0.75,0,0,0,6,6,2,0,1,0,1,18,18.5
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,KJ.SMITH,1.367,4,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1.1
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,LEAKY.BLACK,32.166,64,2,5,0.4,0,0,0,4,6,0.667,1,1,1,1,4,0.25,0.51,0.4,0,0,0,1,6,2,1,0,0,1,8,9
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,ROBBIE.OHAN,1.183,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,RYAN.MCADOO,1.367,4,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,-1.9
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,SHEA.RUSH,1.367,4,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-0.4
+4868920,11/8/2019,UNCW,North Carolina,North Carolina,WALKER.MILLER,1.533,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,ANDREW.PLATEK,22.3,43,3,6,0.5,1,4,0.25,2,4,0.5,2,2,1,0,0,0,0.57,0.583,0,0,0,1,2,2,0,1,0,1,9,8.2
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,ARMANDO.BACOT,23.283,40,6,9,0.667,0,0,0,0,0,0,6,9,0.667,0,0,0,0.667,0.667,1,1,1,4,7,0,0,1,3,1,12,10.3
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,BRANDON.HUFFMAN,1.317,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-0.4
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,CHRISTIAN.KEELING,30.434,57,4,9,0.444,1,4,0.25,0,0,0,2,2,1,1,3,0.333,0.5,0.5,0,0,0,0,4,2,1,2,3,4,9,4.7
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,COLE.ANTHONY,33.084,61,7,17,0.412,3,7,0.429,11,13,0.846,3,4,0.75,1,6,0.167,0.604,0.5,0,0,0,0,1,2,4,1,4,4,28,18.9
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,GARRISON.BROOKS,29.667,54,1,3,0.333,0,0,0,4,4,1,1,2,0.5,0,1,0,0.612,0.333,0,0,0,0,6,5,0,0,3,3,6,5.4
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,JUSTIN.PIERCE,21.117,41,3,6,0.5,0,1,0,2,4,0.5,3,3,1,0,2,0,0.506,0.5,1,1,1,3,4,1,2,0,1,1,8,8.8
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,KJ.SMITH,0.783,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,LEAKY.BLACK,33.884,62,1,6,0.167,0,1,0,0,0,0,0,0,0,1,5,0.2,0.167,0.167,0,0,0,0,5,6,2,0,2,2,2,3.1
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,ROBBIE.OHAN,0.783,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,RYAN.MCADOO,0.783,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,SHEA.RUSH,0.783,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1.5,1.5,0,0,0,0,1,0,0,0,0,0,3,3
+4875377,11/15/2019,North Carolina,Gardner-Webb,North Carolina,WALKER.MILLER,0.783,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1
+4879561,11/20/2019,North Carolina,Elon,North Carolina,ANDREW.PLATEK,18.25,32,2,6,0.333,0,3,0,0,0,0,1,2,0.5,1,1,1,0.333,0.333,0,0,0,0,2,2,0,0,1,2,4,0.8
+4879561,11/20/2019,North Carolina,Elon,North Carolina,ARMANDO.BACOT,25.75,45,9,14,0.643,0,0,0,4,7,0.571,9,13,0.692,0,1,0,0.635,0.643,1,1,1,4,10,2,2,3,1,2,22,24.1
+4879561,11/20/2019,North Carolina,Elon,North Carolina,BRANDON.HUFFMAN,4.817,9,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,2,2.7
+4879561,11/20/2019,North Carolina,Elon,North Carolina,CALEB.ELLIS,0.517,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4879561,11/20/2019,North Carolina,Elon,North Carolina,CHRISTIAN.KEELING,24.867,46,4,9,0.444,1,4,0.25,0,0,0,2,2,1,1,3,0.333,0.5,0.5,0,0,0,0,1,1,0,1,1,2,9,4.2
+4879561,11/20/2019,North Carolina,Elon,North Carolina,COLE.ANTHONY,36.383,66,4,14,0.286,0,5,0,1,2,0.5,2,5,0.4,2,4,0.5,0.301,0.286,1,1,1,1,9,8,0,1,4,3,9,4.9
+4879561,11/20/2019,North Carolina,Elon,North Carolina,GARRISON.BROOKS,33.483,61,6,12,0.5,0,0,0,2,5,0.4,5,6,0.833,1,6,0.167,0.487,0.5,1,1,1,3,3,3,2,0,1,0,14,12.9
+4879561,11/20/2019,North Carolina,Elon,North Carolina,JUSTIN.PIERCE,23.05,43,1,4,0.25,0,2,0,4,5,0.8,0,1,0,1,1,1,0.471,0.25,0,0,0,3,5,2,0,0,1,2,6,6.4
+4879561,11/20/2019,North Carolina,Elon,North Carolina,KJ.SMITH,1.05,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4879561,11/20/2019,North Carolina,Elon,North Carolina,LEAKY.BLACK,27.883,49,2,6,0.333,2,4,0.5,1,2,0.5,0,1,0,0,1,0,0.504,0.5,0,0,0,2,2,1,0,2,1,2,7,5.5
+4879561,11/20/2019,North Carolina,Elon,North Carolina,ROBBIE.OHAN,0.517,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4879561,11/20/2019,North Carolina,Elon,North Carolina,RYAN.MCADOO,0.517,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4879561,11/20/2019,North Carolina,Elon,North Carolina,SHEA.RUSH,0.517,2,0,1,0,0,1,0,2,2,1,0,0,0,0,0,0,0.513,0,0,0,0,1,0,0,0,0,0,0,2,2
+4879561,11/20/2019,North Carolina,Elon,North Carolina,WALKER.MILLER,1.817,4,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,-0.1
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,ANDREW.PLATEK,14.95,29,2,5,0.4,0,1,0,0,0,0,1,2,0.5,1,2,0.5,0.4,0.4,1,1,1,2,0,1,0,0,2,1,4,1
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,ARMANDO.BACOT,26.466,50,5,7,0.714,0,0,0,2,4,0.5,4,5,0.8,1,2,0.5,0.674,0.714,3,4,0.75,6,9,1,0,1,2,3,12,13.4
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,BRANDON.ROBINSON,26.067,52,4,11,0.364,3,6,0.5,1,1,1,1,3,0.333,0,2,0,0.523,0.5,0,0,0,2,4,2,1,0,1,4,12,8.3
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,CHRISTIAN.KEELING,14.333,28,1,6,0.167,0,1,0,0,1,0,1,3,0.333,0,2,0,0.154,0.167,1,2,0.5,2,1,1,0,0,1,1,2,-1.2
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,COLE.ANTHONY,31.583,63,4,13,0.308,1,3,0.333,4,7,0.571,0,3,0,3,7,0.429,0.398,0.346,0,0,0,1,6,6,4,0,6,4,13,7.4
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,GARRISON.BROOKS,35.95,72,7,13,0.538,0,0,0,6,8,0.75,5,7,0.714,2,6,0.333,0.595,0.538,0,0,0,2,5,1,0,1,5,3,20,11
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,JUSTIN.PIERCE,16.367,32,2,7,0.286,0,2,0,0,0,0,2,4,0.5,0,1,0,0.286,0.286,1,2,0.5,2,0,1,1,0,1,1,4,1.6
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,KJ.SMITH,0.15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4884332,11/27/2019,North Carolina,Alabama,North Carolina,LEAKY.BLACK,33.8,66,4,9,0.444,1,1,1,0,0,0,2,5,0.4,1,3,0.333,0.5,0.5,1,1,1,2,7,2,2,1,2,2,9,9.1
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,ANDREW.PLATEK,16.733,32,1,3,0.333,0,1,0,2,2,1,0,0,0,1,2,0.5,0.506,0.333,0,0,0,0,0,0,0,0,0,2,4,1.5
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,ARMANDO.BACOT,21.25,41,3,10,0.3,0,0,0,0,0,0,1,4,0.25,2,6,0.333,0.3,0.3,1,1,1,1,5,0,0,1,3,1,6,-0.3
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,BRANDON.HUFFMAN,5.634,10,2,2,1,0,0,0,0,2,0,1,1,1,1,1,1,0.678,1,0,0,0,0,1,0,0,0,0,0,4,2.9
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,BRANDON.ROBINSON,31.7,53,4,8,0.5,0,3,0,1,2,0.5,1,2,0.5,3,3,1,0.503,0.5,0,0,0,1,2,4,1,0,0,2,9,8.9
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,CHRISTIAN.KEELING,16.433,30,1,3,0.333,0,0,0,1,2,0.5,1,2,0.5,0,1,0,0.38,0.333,0,0,0,0,2,0,1,0,1,4,3,-0.1
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,COLE.ANTHONY,32.967,57,8,17,0.471,2,7,0.286,4,6,0.667,1,2,0.5,5,8,0.625,0.554,0.529,1,1,1,1,6,3,2,0,3,3,22,14.9
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,GARRISON.BROOKS,32.917,57,6,12,0.5,0,0,0,1,4,0.25,2,5,0.4,4,7,0.571,0.468,0.5,1,3,0.333,4,4,0,0,1,3,1,13,7.1
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,JUSTIN.PIERCE,16.817,29,0,3,0,0,2,0,1,2,0.5,0,1,0,0,0,0,0.127,0,0,0,0,1,0,1,0,1,0,0,1,0.6
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,KJ.SMITH,0.533,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-0.4
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,LEAKY.BLACK,20.966,40,1,2,0.5,0,0,0,0,0,0,0,0,0,1,2,0.5,0.5,0.5,0,0,0,0,1,0,0,0,1,1,2,-0.1
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,SHEA.RUSH,0.45,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4884492,11/28/2019,Michigan,North Carolina,North Carolina,WALKER.MILLER,2.35,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,ANDREW.PLATEK,18.316,30,0,5,0,0,3,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,2,0,0,0,0,0,-1.1
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,ARMANDO.BACOT,30.217,49,7,9,0.778,0,0,0,9,10,0.9,6,8,0.75,1,1,1,0.836,0.778,3,4,0.75,7,5,0,0,6,0,4,23,28.1
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,BRANDON.HUFFMAN,3.567,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,BRANDON.ROBINSON,30.567,49,4,8,0.5,3,7,0.429,2,2,1,0,0,0,1,1,1,0.726,0.688,0,0,0,1,2,4,2,1,2,3,13,12.6
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,CHRISTIAN.KEELING,23.016,37,3,13,0.231,1,4,0.25,0,0,0,2,5,0.4,0,4,0,0.269,0.269,1,1,1,1,4,2,1,0,2,0,7,1.4
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,COLE.ANTHONY,28.667,48,6,13,0.462,1,4,0.25,6,6,1,4,6,0.667,1,3,0.333,0.599,0.5,0,0,0,0,5,1,1,1,2,4,19,12.6
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,GARRISON.BROOKS,32.167,53,4,6,0.667,0,0,0,1,1,1,2,3,0.667,2,3,0.667,0.695,0.667,0,0,0,2,8,1,0,3,3,4,9,8.4
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,JUSTIN.PIERCE,16.483,27,2,7,0.286,1,4,0.25,2,2,1,1,3,0.333,0,0,0,0.44,0.357,1,3,0.333,4,0,0,0,1,1,3,7,4.2
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,KJ.SMITH,8.234,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0.4
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,LEAKY.BLACK,8.567,14,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,-2.7
+4884628,11/29/2019,North Carolina,Oregon,North Carolina,WALKER.MILLER,0.2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,ANDREW.PLATEK,11.933,20,0,2,0,0,0,0,1,4,0.25,0,0,0,0,2,0,0.128,0,0,0,0,0,0,0,0,0,0,0,1,-1.6
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,ARMANDO.BACOT,7.133,11,1,2,0.5,0,0,0,0,0,0,1,1,1,0,1,0,0.5,0.5,1,1,1,3,1,0,1,1,0,1,2,4.7
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,BRANDON.HUFFMAN,6.767,11,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,3,0,-2.2
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,BRANDON.ROBINSON,30.983,52,3,9,0.333,1,5,0.2,2,2,1,0,1,0,2,3,0.667,0.452,0.389,0,1,0,1,2,3,0,1,2,3,9,4.8
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,CALEB.ELLIS,2.667,5,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-0.4
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,CHRISTIAN.KEELING,9.85,18,1,4,0.25,0,0,0,0,0,0,0,0,0,1,4,0.25,0.25,0.25,0,0,0,0,1,0,0,0,1,1,2,-1.5
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,COLE.ANTHONY,29.6,49,4,15,0.267,4,8,0.5,3,4,0.75,0,1,0,0,6,0,0.444,0.4,0,0,0,0,2,3,1,0,3,3,15,5.2
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,GARRISON.BROOKS,28.15,46,3,7,0.429,0,1,0,2,2,1,1,2,0.5,2,4,0.5,0.503,0.429,0,0,0,5,2,0,0,1,1,3,8,6.9
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,JUSTIN.PIERCE,23.417,40,3,8,0.375,1,4,0.25,0,0,0,2,4,0.5,0,0,0,0.438,0.438,0,0,0,1,2,1,3,0,0,0,7,7.6
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,KJ.SMITH,6.75,12,0,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,-1.4
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,LEAKY.BLACK,25.267,42,2,9,0.222,1,3,0.333,0,0,0,1,2,0.5,0,4,0,0.278,0.278,0,1,0,1,2,2,0,1,1,0,5,1.9
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,ROBBIE.OHAN,2.667,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,RYAN.MCADOO,1.1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,SHEA.RUSH,5.65,9,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1.1
+4887533,12/4/2019,North Carolina,Ohio St.,North Carolina,WALKER.MILLER,6.234,11,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,-0.8
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,ANDREW.PLATEK,10.517,17,1,3,0.333,0,1,0,0,0,0,1,2,0.5,0,0,0,0.333,0.333,0,1,0,2,0,0,0,0,0,0,2,1.7
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,ANTHONY.HARRIS,5.55,11,2,2,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,4,3.4
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,ARMANDO.BACOT,25.451,37,5,8,0.625,0,0,0,1,6,0.167,4,6,0.667,1,2,0.5,0.507,0.625,0,0,0,0,2,0,1,2,0,3,11,7.2
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,BRANDON.HUFFMAN,1.933,5,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,1.053,0,0,0,0,0,0,0,0,0,0,1,2,1.6
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,BRANDON.ROBINSON,25.066,39,1,4,0.25,0,3,0,0,0,0,0,0,0,1,1,1,0.25,0.25,0,0,0,0,3,1,0,0,2,1,2,-1.2
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,CALEB.ELLIS,1.133,3,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,CHRISTIAN.KEELING,13.999,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0.9
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,COLE.ANTHONY,35.666,55,4,15,0.267,1,6,0.167,3,6,0.5,1,2,0.5,2,7,0.286,0.336,0.3,0,0,0,0,4,0,2,0,6,3,12,-2.1
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,GARRISON.BROOKS,33.233,51,2,5,0.4,0,0,0,2,2,1,1,2,0.5,1,3,0.333,0.504,0.4,1,1,1,3,5,2,0,0,0,3,6,7.1
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,JEREMIAH.FRANCIS,3.217,5,0,0,0,0,0,0,1,2,0.5,0,0,0,0,0,0,0.526,0,0,0,0,0,1,0,0,0,1,2,1,-0.9
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,JUSTIN.PIERCE,16.783,28,0,4,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,3,1,1,0,1,0,0,-1.2
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,KJ.SMITH,1.633,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,LEAKY.BLACK,22.717,34,2,4,0.5,0,1,0,2,2,1,1,1,1,1,2,0.5,0.606,0.5,0,0,0,1,3,2,2,1,2,1,6,7.3
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,RYAN.MCADOO,1.133,3,0,0,0,0,0,0,1,2,0.5,0,0,0,0,0,0,0.526,0,0,0,0,1,0,0,0,0,0,0,1,1.3
+4890050,12/8/2019,Virginia,North Carolina,North Carolina,WALKER.MILLER,1.133,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,ANDREW.PLATEK,19.867,33,2,3,0.667,2,3,0.667,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,2,6,4.6
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,ANTHONY.HARRIS,10.517,19,1,4,0.25,0,1,0,0,0,0,1,1,1,0,2,0,0.25,0.25,1,1,1,1,2,1,2,0,0,1,2,3.2
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,ARMANDO.BACOT,29.433,48,2,14,0.143,0,0,0,4,5,0.8,2,13,0.154,0,1,0,0.244,0.143,1,5,0.2,8,5,1,0,3,2,0,8,6.5
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,BRANDON.HUFFMAN,2.933,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,BRANDON.ROBINSON,33.017,55,4,12,0.333,3,9,0.333,5,6,0.833,0,0,0,1,3,0.333,0.539,0.458,0,0,0,0,6,5,0,2,3,0,16,12.5
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,CHRISTIAN.KEELING,20.134,33,4,10,0.4,0,0,0,0,1,0,1,3,0.333,3,7,0.429,0.382,0.4,0,1,0,3,6,2,0,0,2,2,8,4.7
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,GARRISON.BROOKS,33.484,56,8,10,0.8,0,0,0,1,3,0.333,7,7,1,1,3,0.333,0.744,0.8,1,1,1,2,10,1,0,1,1,4,17,15.6
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,JEREMIAH.FRANCIS,15.617,26,0,3,0,0,1,0,0,2,0,0,1,0,0,1,0,0,0,0,0,0,0,1,3,0,0,1,2,0,-2.3
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,JUSTIN.PIERCE,9.4,15,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,-0.5
+4892527,12/15/2019,North Carolina,Wofford,North Carolina,KJ.SMITH,25.6,43,2,7,0.286,1,5,0.2,2,2,1,1,1,1,0,1,0,0.44,0.357,0,0,0,2,1,4,0,0,2,0,7,5.4
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,ANDREW.PLATEK,11.75,24,2,4,0.5,2,2,1,0,0,0,0,2,0,0,0,0,0.75,0.75,0,0,0,0,1,0,1,0,0,0,6,5.3
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,ANTHONY.HARRIS,14.167,24,2,4,0.5,1,2,0.5,3,4,0.75,0,0,0,1,2,0.5,0.678,0.625,0,0,0,0,0,0,1,0,0,0,8,6.6
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,ARMANDO.BACOT,14.167,27,1,6,0.167,0,0,0,0,0,0,1,1,1,0,5,0,0.167,0.167,1,1,1,1,2,0,0,0,1,4,2,-3.1
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,BRANDON.HUFFMAN,5.4,11,1,2,0.5,0,0,0,0,0,0,0,1,0,1,1,1,0.5,0.5,0,0,0,3,0,0,0,2,0,2,2,3.7
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,BRANDON.ROBINSON,15.683,35,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,1,1,1,1,0,1.5
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,CALEB.ELLIS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,CHRISTIAN.KEELING,19.967,40,5,7,0.714,0,0,0,2,4,0.5,0,2,0,5,5,1,0.674,0.714,0,0,0,2,1,2,0,0,2,0,12,9.4
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,GARRISON.BROOKS,31.116,63,7,11,0.636,0,0,0,2,3,0.667,5,5,1,2,6,0.333,0.644,0.636,1,1,1,2,4,3,2,0,1,3,16,15.2
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,JEREMIAH.FRANCIS,22.133,44,4,9,0.444,2,3,0.667,1,2,0.5,1,4,0.25,1,2,0.5,0.553,0.556,0,0,0,0,0,3,2,0,0,1,11,9.6
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,JUSTIN.PIERCE,20.267,42,3,6,0.5,1,4,0.25,0,0,0,1,1,1,1,1,1,0.583,0.583,0,0,0,1,5,0,0,1,2,2,7,4.1
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,KJ.SMITH,15.3,31,1,5,0.2,0,3,0,2,2,1,1,1,1,0,1,0,0.336,0.2,0,0,0,0,2,1,2,0,2,1,4,1.8
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,LEAKY.BLACK,21.65,46,3,9,0.333,0,2,0,0,0,0,1,1,1,2,6,0.333,0.333,0.333,0,0,0,0,3,1,2,1,2,2,6,2.4
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,ROBBIE.OHAN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,RYAN.MCADOO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,SHEA.RUSH,0.983,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1.5,1.5,0,0,0,0,0,0,0,0,0,0,3,2.7
+4893240,12/18/2019,Gonzaga,North Carolina,North Carolina,WALKER.MILLER,5.167,10,1,1,1,0,0,0,2,2,1,0,0,0,1,1,1,1.026,1,0,0,0,0,1,1,0,0,0,0,4,4.7
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,ANDREW.PLATEK,3.95,8,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,ANTHONY.HARRIS,16.867,37,5,7,0.714,2,3,0.667,2,2,1,2,3,0.667,1,1,1,0.881,0.857,1,1,1,1,0,1,0,0,0,4,14,10.9
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,ARMANDO.BACOT,31.817,60,5,7,0.714,0,0,0,5,10,0.5,5,6,0.833,0,1,0,0.638,0.714,2,2,1,4,8,1,1,1,2,2,15,14.9
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,BRANDON.ROBINSON,33.233,64,3,10,0.3,3,9,0.333,3,6,0.5,0,0,0,0,1,0,0.467,0.45,0,0,0,1,2,2,1,1,2,3,12,6.2
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,CALEB.ELLIS,0.15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,CHRISTIAN.KEELING,7.55,16,1,2,0.5,0,0,0,0,0,0,0,0,0,1,2,0.5,0.5,0.5,0,0,0,0,0,1,0,0,3,0,2,-1.3
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,GARRISON.BROOKS,36.418,74,5,11,0.455,0,0,0,2,6,0.333,4,6,0.667,1,5,0.2,0.433,0.455,1,1,1,2,7,1,2,0,2,2,12,8.1
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,JEREMIAH.FRANCIS,27.917,56,1,8,0.125,1,2,0.5,9,10,0.9,0,4,0,0,2,0,0.471,0.188,0,0,0,0,2,4,0,0,4,2,12,5
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,JUSTIN.PIERCE,9.866,17,1,3,0.333,0,1,0,1,1,1,1,2,0.5,0,0,0,0.432,0.333,0,1,0,1,1,1,0,0,0,1,3,2.6
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,KJ.SMITH,9.233,17,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,-0.5
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,LEAKY.BLACK,21.633,42,2,5,0.4,0,1,0,0,0,0,0,1,0,2,3,0.667,0.4,0.4,0,0,0,1,2,1,3,0,4,4,4,0.7
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,ROBBIE.OHAN,0.15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,SHEA.RUSH,0.15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4894271,12/21/2019,North Carolina,UCLA,North Carolina,WALKER.MILLER,0.15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,ARMANDO.BACOT,16.449,31,1,6,0.167,0,0,0,2,3,0.667,1,4,0.25,0,2,0,0.269,0.167,0,1,0,1,2,2,1,0,2,3,4,0.3
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,BRANDON.HUFFMAN,1.95,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,BRANDON.ROBINSON,33.934,62,4,11,0.364,4,9,0.444,0,0,0,0,0,0,0,2,0,0.545,0.545,0,0,0,2,0,6,4,0,3,2,12,11.7
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,CHRISTIAN.KEELING,16.734,33,3,5,0.6,0,1,0,0,0,0,2,3,0.667,1,1,1,0.6,0.6,0,0,0,0,0,1,1,1,4,2,6,1.3
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,GARRISON.BROOKS,35.7,66,9,18,0.5,0,0,0,17,18,0.944,5,6,0.833,4,12,0.333,0.659,0.5,3,3,1,7,4,2,1,0,1,5,35,31.1
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,JEREMIAH.FRANCIS,27.383,47,1,8,0.125,1,2,0.5,2,2,1,0,1,0,0,5,0,0.279,0.188,0,0,0,0,2,2,1,0,3,1,5,-0.6
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,JUSTIN.PIERCE,24.133,43,4,6,0.667,1,2,0.5,2,4,0.5,2,3,0.667,1,1,1,0.696,0.75,1,1,1,2,1,3,0,0,0,3,11,10.2
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,KJ.SMITH,9.967,20,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,2,1.4
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,LEAKY.BLACK,28.217,52,4,7,0.571,0,0,0,0,0,0,2,3,0.667,2,4,0.5,0.571,0.571,0,1,0,2,2,0,1,1,0,2,8,7.6
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,ROBBIE.OHAN,0.633,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-0.4
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,SHEA.RUSH,1.95,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,-1
+4897624,1/4/2020,North Carolina,Georgia Tech,North Carolina,WALKER.MILLER,2.2,4,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1.1
+4898631,12/30/2019,North Carolina,Yale,North Carolina,ANTHONY.HARRIS,13.183,26,2,5,0.4,0,1,0,2,2,1,1,2,0.5,1,2,0.5,0.504,0.4,0,0,0,1,0,1,1,0,2,1,6,3.3
+4898631,12/30/2019,North Carolina,Yale,North Carolina,ARMANDO.BACOT,16.75,29,0,5,0,0,0,0,2,2,1,0,1,0,0,4,0,0.168,0,0,0,0,2,4,0,0,0,0,4,2,-0.5
+4898631,12/30/2019,North Carolina,Yale,North Carolina,BRANDON.ROBINSON,36.25,65,7,18,0.389,5,12,0.417,1,1,1,1,2,0.5,1,4,0.25,0.541,0.528,1,1,1,1,2,3,1,0,2,5,20,10.6
+4898631,12/30/2019,North Carolina,Yale,North Carolina,CHRISTIAN.KEELING,9.15,14,1,3,0.333,0,0,0,0,0,0,0,0,0,1,3,0.333,0.333,0.333,0,0,0,2,1,1,0,0,1,1,2,1.3
+4898631,12/30/2019,North Carolina,Yale,North Carolina,GARRISON.BROOKS,34.95,65,5,10,0.5,0,0,0,1,4,0.25,3,6,0.5,2,4,0.5,0.462,0.5,1,1,1,2,9,2,0,3,1,2,11,10.6
+4898631,12/30/2019,North Carolina,Yale,North Carolina,JEREMIAH.FRANCIS,27.133,51,3,9,0.333,0,1,0,4,6,0.667,3,5,0.6,0,3,0,0.422,0.333,0,0,0,0,4,5,1,0,2,2,10,7
+4898631,12/30/2019,North Carolina,Yale,North Carolina,JUSTIN.PIERCE,27.366,50,6,11,0.545,0,2,0,2,2,1,5,6,0.833,1,3,0.333,0.586,0.545,2,2,1,3,4,1,0,1,0,1,14,13
+4898631,12/30/2019,North Carolina,Yale,North Carolina,KJ.SMITH,6.017,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1.3
+4898631,12/30/2019,North Carolina,Yale,North Carolina,LEAKY.BLACK,29.199,54,2,9,0.222,1,3,0.333,0,0,0,1,2,0.5,0,4,0,0.278,0.278,0,1,0,4,5,1,0,1,0,3,5,4
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,ANDREW.PLATEK,18.917,33,1,4,0.25,0,1,0,0,0,0,1,2,0.5,0,1,0,0.25,0.25,0,1,0,1,4,0,0,0,1,1,2,0.1
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,ARMANDO.BACOT,30.867,55,6,11,0.545,0,0,0,3,4,0.75,4,6,0.667,2,5,0.4,0.581,0.545,0,0,0,2,7,4,0,1,4,1,15,11.9
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,BRANDON.ROBINSON,33.783,62,4,9,0.444,3,8,0.375,2,2,1,0,0,0,1,1,1,0.653,0.611,0,0,0,1,0,3,1,0,3,3,13,7.9
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,CHRISTIAN.KEELING,6,12,1,3,0.333,0,0,0,0,0,0,1,1,1,0,2,0,0.333,0.333,1,1,1,1,2,0,0,0,0,2,2,0.8
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,GARRISON.BROOKS,37.116,67,9,12,0.75,1,1,1,2,5,0.4,4,4,1,4,7,0.571,0.73,0.792,2,2,1,3,7,1,1,0,1,3,21,18.7
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,JEREMIAH.FRANCIS,24.45,43,1,9,0.111,0,5,0,0,0,0,1,2,0.5,0,2,0,0.111,0.111,0,0,0,0,2,4,2,0,4,3,2,-3.7
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,JUSTIN.PIERCE,11.817,22,0,4,0,0,1,0,0,2,0,0,3,0,0,0,0,0,0,0,1,0,2,2,0,0,0,0,1,0,-2
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,KJ.SMITH,3.333,6,0,0,0,0,0,0,1,2,0.5,0,0,0,0,0,0,0.526,0,0,0,0,0,0,1,1,0,0,1,1,1.9
+4899129,1/8/2020,North Carolina,Pittsburgh,North Carolina,LEAKY.BLACK,33.217,61,3,9,0.333,1,5,0.2,2,2,1,0,1,0,2,3,0.667,0.452,0.389,0,0,0,1,4,4,2,2,3,4,9,7.4
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,ANDREW.PLATEK,38.367,65,4,10,0.4,0,5,0,0,0,0,1,1,1,3,4,0.75,0.4,0.4,0,0,0,1,7,6,2,0,1,2,8,9.8
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,ARMANDO.BACOT,36.499,63,7,10,0.7,0,0,0,7,10,0.7,6,8,0.75,1,2,0.5,0.712,0.7,1,1,1,2,3,1,1,2,1,2,21,19.2
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,BRANDON.ROBINSON,41.334,70,9,17,0.529,5,13,0.385,4,4,1,2,2,1,2,2,1,0.714,0.676,1,1,1,1,3,4,4,0,3,4,27,22.5
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,CHRISTIAN.KEELING,10.3,19,0,2,0,0,1,0,2,2,1,0,0,0,0,1,0,0.339,0,0,0,0,0,2,0,0,0,0,1,2,0.8
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,GARRISON.BROOKS,37.317,63,6,15,0.4,0,1,0,1,3,0.333,4,8,0.5,2,6,0.333,0.396,0.4,1,2,0.5,4,7,1,1,0,1,3,13,8.5
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,JUSTIN.PIERCE,16.183,27,0,3,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,1,0,0,1,0,0,-1.8
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,KJ.SMITH,3.983,7,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4901037,1/11/2020,North Carolina,Clemson,North Carolina,LEAKY.BLACK,41.017,70,2,8,0.25,1,4,0.25,0,1,0,1,1,1,0,3,0,0.295,0.312,0,0,0,1,5,5,0,1,3,2,5,2.4
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,ANDREW.PLATEK,18.101,31,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,1,4,0,0,1,1,0,1.7
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,ARMANDO.BACOT,28.717,46,5,12,0.417,0,0,0,2,3,0.667,5,9,0.556,0,3,0,0.447,0.417,2,2,1,4,7,2,3,1,3,5,12,10.2
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,BRANDON.ROBINSON,32.016,51,3,10,0.3,3,9,0.333,3,4,0.75,0,0,0,0,1,0,0.504,0.45,0,0,0,1,2,0,0,0,3,5,12,2.1
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,CHRISTIAN.KEELING,15.549,26,0,4,0,0,1,0,2,2,1,0,0,0,0,3,0,0.202,0,0,0,0,3,1,1,0,0,0,1,2,1.9
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,GARRISON.BROOKS,37.633,62,7,15,0.467,0,0,0,2,8,0.25,5,9,0.556,2,6,0.333,0.426,0.467,2,4,0.5,6,7,1,0,0,3,1,16,9.5
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,JEREMIAH.FRANCIS,14.784,29,0,5,0,0,2,0,1,2,0.5,0,0,0,0,3,0,0.084,0,0,0,0,0,1,0,0,0,2,0,1,-4.6
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,JUSTIN.PIERCE,15.733,26,2,6,0.333,0,3,0,0,0,0,2,2,1,0,1,0,0.333,0.333,1,1,1,2,1,1,0,0,3,0,4,0
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,LEAKY.BLACK,33.767,51,2,5,0.4,1,2,0.5,0,2,0,0,0,0,1,3,0.333,0.42,0.5,0,0,0,0,4,2,4,1,0,2,5,8
+4904510,1/18/2020,Pittsburgh,North Carolina,North Carolina,SHEA.RUSH,2.034,4,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1.1
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,ANDREW.PLATEK,48,75,2,11,0.182,1,8,0.125,2,3,0.667,1,1,1,0,2,0,0.282,0.227,0,0,0,0,5,3,0,1,1,1,7,2.6
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,ARMANDO.BACOT,34.183,55,3,7,0.429,0,0,0,3,3,1,2,2,1,1,5,0.2,0.534,0.429,0,0,0,1,3,4,0,0,1,5,9,6.7
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,CHRISTIAN.KEELING,8.367,13,1,3,0.333,0,1,0,0,0,0,1,1,1,0,1,0,0.333,0.333,0,0,0,0,1,0,0,0,0,1,2,0.2
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,GARRISON.BROOKS,48.35,76,11,18,0.611,0,1,0,6,8,0.75,5,6,0.833,6,11,0.545,0.642,0.611,0,0,0,1,12,6,0,0,4,3,28,22.3
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,JEREMIAH.FRANCIS,17.866,28,2,5,0.4,0,1,0,0,0,0,2,3,0.667,0,1,0,0.4,0.4,0,0,0,0,3,2,1,0,0,1,4,4.2
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,JUSTIN.PIERCE,45.884,73,6,10,0.6,3,5,0.6,0,2,0,3,3,1,0,2,0,0.685,0.75,1,1,1,2,6,0,0,0,3,3,15,8.6
+4907194,1/22/2020,Virginia Tech,North Carolina,North Carolina,LEAKY.BLACK,47.35,75,3,10,0.3,3,6,0.5,3,4,0.75,0,2,0,0,2,0,0.504,0.45,0,1,0,2,6,2,0,1,4,1,12,6.7
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,ANDREW.PLATEK,26.8,50,3,7,0.429,1,3,0.333,0,0,0,1,3,0.333,1,1,1,0.5,0.5,0,0,0,0,1,4,0,0,1,0,7,5.4
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,ARMANDO.BACOT,32.15,57,8,11,0.727,0,0,0,3,3,1,7,9,0.778,1,2,0.5,0.765,0.727,1,1,1,2,10,7,0,2,1,2,19,23.4
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,BRANDON.HUFFMAN,1.333,5,2,2,1,0,0,0,0,0,0,2,2,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,4,4.1
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,BRANDON.ROBINSON,31.733,58,11,16,0.688,6,10,0.6,1,2,0.5,2,2,1,3,4,0.75,0.855,0.875,1,1,1,3,0,4,2,0,1,2,29,26.9
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,CALEB.ELLIS,1.6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-0.4
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,CHRISTIAN.KEELING,15.584,30,4,6,0.667,1,3,0.333,0,0,0,2,2,1,1,1,1,0.75,0.75,1,1,1,1,1,1,1,0,1,3,9,6.9
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,GARRISON.BROOKS,27.316,49,7,11,0.636,0,1,0,0,1,0,4,4,1,3,6,0.5,0.61,0.636,0,0,0,1,4,2,0,0,0,3,14,10.8
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,JUSTIN.PIERCE,17.166,35,4,8,0.5,1,2,0.5,0,0,0,2,4,0.5,1,2,0.5,0.562,0.562,1,2,0.5,2,3,4,0,1,1,3,9,8.6
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,KJ.SMITH,11.367,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,0,0,2,1,0,0.3
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,LEAKY.BLACK,26.366,45,1,7,0.143,1,3,0.333,0,0,0,0,2,0,0,2,0,0.214,0.214,0,0,0,0,5,6,3,0,2,2,3,4.4
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,ROBBIE.OHAN,1.017,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,-0.7
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,RYAN.MCADOO,1.333,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0.7
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,SHEA.RUSH,1.6,5,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,-1.4
+4908586,1/25/2020,North Carolina,Miami (FL),North Carolina,WALKER.MILLER,3.217,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,-0.4
+4912246,1/27/2020,NC State,North Carolina,North Carolina,ANDREW.PLATEK,25.967,45,4,5,0.8,0,0,0,0,0,0,3,3,1,1,2,0.5,0.8,0.8,0,0,0,1,0,1,1,0,2,2,8,5.7
+4912246,1/27/2020,NC State,North Carolina,North Carolina,ARMANDO.BACOT,27.418,49,2,10,0.2,0,0,0,7,11,0.636,2,10,0.2,0,0,0,0.361,0.2,0,2,0,5,6,3,2,1,4,3,11,8.1
+4912246,1/27/2020,NC State,North Carolina,North Carolina,BRANDON.ROBINSON,29.15,51,2,5,0.4,0,2,0,7,7,1,0,0,0,2,3,0.667,0.661,0.4,0,0,0,1,5,0,0,0,0,1,11,10.1
+4912246,1/27/2020,NC State,North Carolina,North Carolina,CHRISTIAN.KEELING,24.117,41,2,3,0.667,0,0,0,0,2,0,0,0,0,2,3,0.667,0.506,0.667,0,0,0,0,1,0,0,0,0,1,4,1.8
+4912246,1/27/2020,NC State,North Carolina,North Carolina,GARRISON.BROOKS,37.233,65,11,20,0.55,0,1,0,3,5,0.6,10,14,0.714,1,5,0.2,0.559,0.55,2,3,0.667,6,5,3,0,0,2,1,25,20
+4912246,1/27/2020,NC State,North Carolina,North Carolina,JUSTIN.PIERCE,14.367,23,1,3,0.333,1,3,0.333,0,0,0,0,0,0,0,0,0,0.5,0.5,0,0,0,0,0,1,1,0,2,0,3,1
+4912246,1/27/2020,NC State,North Carolina,North Carolina,KJ.SMITH,11.05,20,1,2,0.5,0,0,0,0,0,0,1,1,1,0,1,0,0.5,0.5,0,0,0,0,4,1,0,0,0,1,2,2.5
+4912246,1/27/2020,NC State,North Carolina,North Carolina,LEAKY.BLACK,28.783,49,5,9,0.556,1,3,0.333,0,0,0,2,4,0.5,2,2,1,0.611,0.611,1,1,1,1,6,2,0,1,2,4,11,7.7
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,ANDREW.PLATEK,16.417,31,1,2,0.5,0,1,0,1,2,0.5,0,0,0,1,1,1,0.508,0.5,0,0,0,0,3,0,1,0,1,0,3,2.5
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,ARMANDO.BACOT,31.017,58,2,5,0.4,0,0,0,7,8,0.875,2,4,0.5,0,1,0,0.625,0.4,0,0,0,3,7,1,1,1,2,4,11,10.9
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,BRANDON.HUFFMAN,1.983,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0.3
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,BRANDON.ROBINSON,36.634,65,5,16,0.312,2,9,0.222,0,0,0,2,3,0.667,1,4,0.25,0.375,0.375,0,0,0,0,3,0,1,1,1,5,12,2.4
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,CHRISTIAN.KEELING,9.95,19,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,2,1,0,0,1,0,2.3
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,COLE.ANTHONY,25.8,46,5,14,0.357,2,8,0.25,14,14,1,1,1,1,2,5,0.4,0.63,0.429,0,0,0,0,5,3,2,0,1,3,26,21.6
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,GARRISON.BROOKS,34.151,62,5,15,0.333,0,0,0,0,7,0,5,11,0.455,0,4,0,0.273,0.333,2,4,0.5,6,4,2,0,0,3,1,10,2.1
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,JEREMIAH.FRANCIS,2.617,5,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,2,2.3
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,JUSTIN.PIERCE,12.85,23,1,2,0.5,0,1,0,0,0,0,1,1,1,0,0,0,0.5,0.5,1,1,1,1,1,0,0,0,2,3,2,-1.2
+4915604,2/1/2020,North Carolina,Boston College,North Carolina,LEAKY.BLACK,28.584,52,2,5,0.4,0,0,0,0,0,0,1,3,0.333,1,2,0.5,0.4,0.4,0,1,0,2,0,1,2,1,2,2,4,3.3
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,ANDREW.PLATEK,32.85,56,2,6,0.333,1,2,0.5,0,0,0,1,1,1,0,3,0,0.417,0.417,0,0,0,2,0,2,1,0,1,1,5,4
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,ARMANDO.BACOT,25.767,45,2,3,0.667,0,0,0,2,2,1,2,2,1,0,1,0,0.759,0.667,1,1,1,1,5,0,1,0,3,3,6,3.7
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,CHRISTIAN.KEELING,18,34,5,10,0.5,1,2,0.5,3,3,1,2,3,0.667,2,5,0.4,0.613,0.55,0,0,0,0,2,0,2,1,1,0,14,11.3
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,COLE.ANTHONY,37.483,66,5,22,0.227,3,10,0.3,3,8,0.375,0,4,0,2,8,0.25,0.31,0.295,0,1,0,1,7,3,0,0,3,4,16,0.9
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,GARRISON.BROOKS,33.817,58,2,8,0.25,0,0,0,1,2,0.5,1,6,0.167,1,2,0.5,0.279,0.25,1,3,0.333,4,0,2,1,0,0,4,5,3.4
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,JEREMIAH.FRANCIS,3.25,6,0,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1.8
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,JUSTIN.PIERCE,14.784,28,1,6,0.167,1,3,0.333,0,0,0,0,0,0,0,3,0,0.25,0.25,0,0,0,3,2,0,0,1,0,2,3,1.8
+4916710,2/3/2020,Florida St.,North Carolina,North Carolina,LEAKY.BLACK,33.634,60,4,10,0.4,0,1,0,2,2,1,3,5,0.6,1,4,0.25,0.457,0.4,1,1,1,1,4,3,2,1,1,3,10,9.1
+4920581,2/8/2020,North Carolina,Duke,North Carolina,ANDREW.PLATEK,35.217,72,3,7,0.429,0,1,0,3,6,0.5,1,1,1,2,5,0.4,0.457,0.429,0,0,0,2,5,5,1,0,2,4,9,7.9
+4920581,2/8/2020,North Carolina,Duke,North Carolina,ARMANDO.BACOT,29.033,59,4,10,0.4,0,0,0,4,9,0.444,3,6,0.5,1,4,0.25,0.42,0.4,0,1,0,2,5,3,0,3,1,5,12,8.7
+4920581,2/8/2020,North Carolina,Duke,North Carolina,CHRISTIAN.KEELING,25.184,54,5,7,0.714,1,1,1,2,2,1,0,1,0,4,5,0.8,0.818,0.786,0,1,0,1,3,0,2,0,2,2,13,10.9
+4920581,2/8/2020,North Carolina,Duke,North Carolina,COLE.ANTHONY,43.283,92,7,17,0.412,1,4,0.25,9,10,0.9,1,3,0.333,5,10,0.5,0.552,0.441,0,0,0,1,10,4,1,0,4,4,24,16.4
+4920581,2/8/2020,North Carolina,Duke,North Carolina,GARRISON.BROOKS,36.466,76,9,12,0.75,0,0,0,0,5,0,6,7,0.857,3,5,0.6,0.626,0.75,0,0,0,1,4,2,1,2,5,3,18,10.7
+4920581,2/8/2020,North Carolina,Duke,North Carolina,JUSTIN.PIERCE,20.85,44,5,9,0.556,1,3,0.333,0,0,0,2,2,1,2,4,0.5,0.611,0.611,1,1,1,2,2,0,1,0,0,3,11,8.5
+4920581,2/8/2020,North Carolina,Duke,North Carolina,LEAKY.BLACK,32.4,67,3,7,0.429,0,3,0,2,4,0.5,2,2,1,1,2,0.5,0.449,0.429,1,1,1,2,5,9,2,0,4,5,8,8.7
+4920581,2/8/2020,North Carolina,Duke,North Carolina,WALKER.MILLER,2.567,6,0,0,0,0,0,0,1,2,0.5,0,0,0,0,0,0,0.526,0,0,0,0,0,0,0,0,0,0,1,1,0.2
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,ANDREW.PLATEK,13.934,25,1,4,0.25,0,2,0,0,0,0,1,2,0.5,0,0,0,0.25,0.25,0,0,0,0,1,1,1,0,0,1,2,1.2
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,ARMANDO.BACOT,25.666,46,5,10,0.5,0,0,0,0,0,0,5,9,0.556,0,1,0,0.5,0.5,1,2,0.5,2,5,0,0,0,0,3,10,6.7
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,CHRISTIAN.KEELING,30.416,53,7,14,0.5,1,4,0.25,0,0,0,1,2,0.5,5,8,0.625,0.536,0.536,0,0,0,2,2,0,2,0,3,3,15,7.8
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,COLE.ANTHONY,36.616,62,5,19,0.263,0,6,0,5,6,0.833,3,6,0.5,2,7,0.286,0.343,0.263,1,1,1,2,4,4,1,1,7,3,15,2.2
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,GARRISON.BROOKS,28.617,50,0,5,0,0,0,0,7,8,0.875,0,3,0,0,2,0,0.398,0,0,0,0,2,3,1,1,0,2,4,7,3.5
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,JEREMIAH.FRANCIS,5.917,11,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,2,2.7
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,JUSTIN.PIERCE,14.817,26,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,4,0,-2.4
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,LEAKY.BLACK,29.083,48,1,5,0.2,0,2,0,2,2,1,1,1,1,0,2,0,0.336,0.2,1,1,1,3,3,2,3,1,1,3,4,6.8
+4923827,2/11/2020,Wake Forest,North Carolina,North Carolina,WALKER.MILLER,14.766,22,1,3,0.333,0,0,0,0,0,0,1,3,0.333,0,0,0,0.333,0.333,1,2,0.5,2,2,0,0,1,1,2,2,1.2
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,ANDREW.PLATEK,18.867,29,0,2,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,3,0,0,1,0,0,0
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,ARMANDO.BACOT,34.417,56,3,6,0.5,0,0,0,2,2,1,2,5,0.4,1,1,1,0.576,0.5,0,0,0,2,14,0,1,1,5,1,8,6.9
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,CHRISTIAN.KEELING,32.767,52,4,6,0.667,0,0,0,3,3,1,0,0,0,4,6,0.667,0.741,0.667,0,0,0,0,0,0,1,0,0,2,11,8.6
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,COLE.ANTHONY,34.783,56,7,16,0.438,2,5,0.4,1,1,1,2,3,0.667,3,8,0.375,0.516,0.5,0,0,0,0,3,5,0,0,3,4,17,8.4
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,GARRISON.BROOKS,36.133,57,9,14,0.643,1,1,1,1,4,0.25,1,4,0.25,7,9,0.778,0.629,0.679,0,1,0,3,2,4,1,0,2,3,20,15.9
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,JUSTIN.PIERCE,9.617,15,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,-1.1
+4928680,2/15/2020,North Carolina,Virginia,North Carolina,LEAKY.BLACK,33.417,54,2,4,0.5,0,1,0,2,4,0.5,1,1,1,1,2,0.5,0.508,0.5,1,1,1,1,2,1,3,2,1,0,6,8.6
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,ANDREW.PLATEK,4.533,7,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,ARMANDO.BACOT,23.75,40,1,6,0.167,0,0,0,0,0,0,1,5,0.2,0,1,0,0.167,0.167,0,0,0,2,8,2,0,1,3,4,2,-0.5
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,BRANDON.ROBINSON,25.35,46,4,8,0.5,3,6,0.5,0,0,0,0,0,0,1,2,0.5,0.688,0.688,0,0,0,1,2,2,1,0,1,2,11,8.9
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,CHRISTIAN.KEELING,27.2,44,3,8,0.375,1,2,0.5,2,2,1,0,0,0,2,6,0.333,0.503,0.438,0,0,0,1,3,0,0,0,1,4,9,3.6
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,COLE.ANTHONY,37.55,64,7,16,0.438,3,8,0.375,6,6,1,2,2,1,2,6,0.333,0.61,0.531,0,0,0,0,3,6,0,0,1,1,23,18.3
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,GARRISON.BROOKS,36.399,62,11,18,0.611,0,0,0,0,2,0,7,11,0.636,4,7,0.571,0.58,0.611,1,1,1,3,4,5,1,0,4,4,22,15.2
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,JUSTIN.PIERCE,9.634,15,0,3,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,2,0,0,0,0,1,0,-1.2
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,LEAKY.BLACK,33.65,59,2,6,0.333,1,2,0.5,4,4,1,1,1,1,0,3,0,0.57,0.417,0,0,0,5,5,3,2,1,2,1,9,13
+4931243,2/17/2020,Notre Dame,North Carolina,North Carolina,WALKER.MILLER,1.767,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,ANDREW.PLATEK,17.183,28,3,5,0.6,2,3,0.667,1,1,1,1,1,1,0,1,0,0.822,0.8,0,0,0,2,1,0,0,0,1,0,9,7.4
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,ARMANDO.BACOT,32.75,53,3,7,0.429,0,0,0,1,2,0.5,3,3,1,0,4,0,0.44,0.429,0,0,0,2,7,1,1,2,2,2,7,6.7
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,BRANDON.HUFFMAN,3.95,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0.3
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,BRANDON.ROBINSON,30.15,49,2,8,0.25,0,6,0,0,0,0,0,0,0,2,2,1,0.25,0.25,0,0,0,1,0,3,0,0,2,4,4,-1.6
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,CALEB.ELLIS,1.833,3,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,2,2.4
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,CHRISTIAN.KEELING,24.733,41,3,7,0.429,2,4,0.5,1,1,1,1,1,1,0,2,0,0.602,0.571,0,0,0,1,2,0,1,0,1,2,9,5.8
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,COLE.ANTHONY,32.634,54,7,16,0.438,2,7,0.286,2,2,1,3,3,1,2,6,0.333,0.531,0.5,0,0,0,1,6,2,1,0,4,1,18,10.1
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,JEREMIAH.FRANCIS,6.4,10,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,1,0,-2.4
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,KJ.SMITH,1.833,3,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,1.053,0,0,0,0,0,0,1,0,0,0,0,2,2.7
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,LEAKY.BLACK,33.517,54,2,7,0.286,0,2,0,0,0,0,1,1,1,1,4,0.25,0.286,0.286,0,0,0,1,3,2,1,1,2,1,4,2.2
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,ROBBIE.OHAN,1.833,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,RYAN.MCADOO,1.833,3,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,SHEA.RUSH,1.833,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,-1
+4935512,2/22/2020,Louisville,North Carolina,North Carolina,WALKER.MILLER,8.267,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,-2
+4939635,2/25/2020,North Carolina,NC State,North Carolina,ANDREW.PLATEK,5.55,13,1,2,0.5,0,1,0,1,2,0.5,1,1,1,0,0,0,0.508,0.5,0,0,0,0,1,1,1,0,0,1,3,3.2
+4939635,2/25/2020,North Carolina,NC State,North Carolina,ARMANDO.BACOT,13.433,24,1,4,0.25,0,0,0,1,2,0.5,1,3,0.333,0,1,0,0.303,0.25,0,0,0,0,3,0,0,2,3,2,3,-1.3
+4939635,2/25/2020,North Carolina,NC State,North Carolina,BRANDON.ROBINSON,19.6,37,1,4,0.25,0,3,0,1,1,1,0,0,0,1,1,1,0.335,0.25,0,0,0,0,0,0,1,1,0,3,3,1.1
+4939635,2/25/2020,North Carolina,NC State,North Carolina,CHRISTIAN.KEELING,26.85,52,7,9,0.778,2,4,0.5,0,0,0,1,1,1,4,4,1,0.889,0.889,0,0,0,0,7,1,0,1,0,0,16,16
+4939635,2/25/2020,North Carolina,NC State,North Carolina,COLE.ANTHONY,37.083,69,7,12,0.583,1,4,0.25,4,7,0.571,4,4,1,2,4,0.5,0.62,0.625,0,0,0,1,4,5,2,0,5,3,19,13.4
+4939635,2/25/2020,North Carolina,NC State,North Carolina,GARRISON.BROOKS,37.366,72,8,15,0.533,0,0,0,14,16,0.875,6,9,0.667,2,6,0.333,0.664,0.533,1,2,0.5,4,5,1,0,0,2,0,30,24.9
+4939635,2/25/2020,North Carolina,NC State,North Carolina,JUSTIN.PIERCE,27.683,52,1,5,0.2,0,3,0,1,2,0.5,1,1,1,0,1,0,0.252,0.2,1,1,1,4,1,2,3,0,2,3,3,3.8
+4939635,2/25/2020,North Carolina,NC State,North Carolina,LEAKY.BLACK,31.417,62,4,9,0.444,0,1,0,0,1,0,1,2,0.5,3,6,0.5,0.422,0.444,0,0,0,2,2,0,1,0,2,2,8,3.1
+4939635,2/25/2020,North Carolina,NC State,North Carolina,WALKER.MILLER,0.933,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,ANDREW.PLATEK,4.65,9,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,1.053,0,0,0,0,1,0,0,0,0,0,0,2,2.7
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,ARMANDO.BACOT,8.633,16,1,2,0.5,0,0,0,1,2,0.5,0,1,0,1,1,1,0.508,0.5,0,0,0,1,3,0,0,0,0,0,3,3.2
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,BRANDON.ROBINSON,29.85,51,2,8,0.25,2,6,0.333,0,0,0,0,0,0,0,2,0,0.375,0.375,0,0,0,2,3,4,1,0,0,3,6,6.1
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,CHRISTIAN.KEELING,26.5,48,7,11,0.636,2,4,0.5,2,2,1,0,0,0,5,7,0.714,0.753,0.727,0,0,0,2,1,2,0,0,0,2,18,15.4
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,COLE.ANTHONY,36.283,65,8,13,0.615,7,11,0.636,2,3,0.667,1,2,0.5,0,0,0,0.867,0.885,0,0,0,0,2,7,2,1,2,2,25,24.1
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,GARRISON.BROOKS,37.283,67,9,14,0.643,0,0,0,8,8,1,9,11,0.818,0,3,0,0.73,0.643,2,2,1,4,10,4,0,2,5,4,26,23.2
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,JUSTIN.PIERCE,18.917,35,2,7,0.286,0,2,0,0,0,0,0,1,0,2,4,0.5,0.286,0.286,0,0,0,1,2,2,0,2,0,4,4,2.4
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,KJ.SMITH,0.4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,LEAKY.BLACK,35.584,63,4,9,0.444,0,3,0,0,0,0,2,2,1,2,4,0.5,0.444,0.444,1,1,1,2,3,6,1,1,3,4,8,6.9
+4943927,2/29/2020,Syracuse,North Carolina,North Carolina,WALKER.MILLER,0.4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,ANDREW.PLATEK,6.917,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,BRANDON.ROBINSON,35.033,64,6,11,0.545,5,9,0.556,1,2,0.5,0,0,0,1,2,0.5,0.753,0.773,0,0,0,0,4,3,1,0,2,1,18,14.2
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,CALEB.ELLIS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,CHRISTIAN.KEELING,26.6,51,3,8,0.375,1,1,1,2,3,0.667,0,0,0,2,7,0.286,0.477,0.438,0,0,0,1,1,0,1,0,0,2,9,5.4
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,COLE.ANTHONY,38,71,8,14,0.571,4,5,0.8,8,8,1,2,3,0.667,2,6,0.333,0.787,0.714,0,0,0,0,4,7,0,0,1,4,28,24.9
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,GARRISON.BROOKS,34.484,63,9,12,0.75,0,0,0,7,11,0.636,5,5,1,4,7,0.571,0.726,0.75,1,1,1,2,5,1,0,0,2,2,25,19.4
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,JUSTIN.PIERCE,23.75,44,2,5,0.4,0,1,0,0,0,0,2,3,0.667,0,1,0,0.4,0.4,1,1,1,1,2,1,1,0,1,4,4,1.7
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,LEAKY.BLACK,31.933,60,3,10,0.3,0,0,0,3,4,0.75,2,5,0.4,1,5,0.2,0.378,0.3,0,2,0,3,5,5,1,2,1,3,9,10.1
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,ROBBIE.OHAN,1.367,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,SHEA.RUSH,1.367,3,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4948049,3/3/2020,North Carolina,Wake Forest,North Carolina,WALKER.MILLER,0.05,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4953041,3/7/2020,Duke,North Carolina,North Carolina,ANDREW.PLATEK,4.55,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-0.4
+4953041,3/7/2020,Duke,North Carolina,North Carolina,ARMANDO.BACOT,23.383,41,5,7,0.714,0,0,0,3,6,0.5,4,6,0.667,1,1,1,0.66,0.714,3,4,0.75,6,6,0,0,0,2,4,13,11.3
+4953041,3/7/2020,Duke,North Carolina,North Carolina,BRANDON.ROBINSON,29.084,50,4,8,0.5,3,5,0.6,0,0,0,0,0,0,1,3,0.333,0.688,0.688,0,0,0,0,0,0,1,0,1,4,11,5.4
+4953041,3/7/2020,Duke,North Carolina,North Carolina,CHRISTIAN.KEELING,18.934,35,1,6,0.167,0,0,0,0,0,0,0,2,0,1,4,0.25,0.167,0.167,0,0,0,0,2,0,0,0,0,2,2,-2
+4953041,3/7/2020,Duke,North Carolina,North Carolina,COLE.ANTHONY,38.3,68,4,14,0.286,0,2,0,1,2,0.5,2,3,0.667,2,9,0.222,0.301,0.286,0,0,0,0,2,3,2,0,2,3,9,1.9
+4953041,3/7/2020,Duke,North Carolina,North Carolina,GARRISON.BROOKS,37.05,65,9,22,0.409,0,0,0,8,10,0.8,6,16,0.375,3,6,0.5,0.486,0.409,3,9,0.333,9,4,0,1,0,0,3,26,20.7
+4953041,3/7/2020,Duke,North Carolina,North Carolina,JEREMIAH.FRANCIS,1.183,2,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,2,2
+4953041,3/7/2020,Duke,North Carolina,North Carolina,JUSTIN.PIERCE,13.683,26,1,2,0.5,0,0,0,2,2,1,1,1,1,0,1,0,0.678,0.5,1,1,1,2,1,1,0,0,1,1,4,4
+4953041,3/7/2020,Duke,North Carolina,North Carolina,LEAKY.BLACK,30.75,54,3,10,0.3,1,5,0.2,0,0,0,1,1,1,1,4,0.25,0.35,0.35,0,0,0,0,3,3,0,1,2,3,7,1.7
+4953041,3/7/2020,Duke,North Carolina,North Carolina,WALKER.MILLER,2.916,6,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,2,0.3
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,ANDREW.PLATEK,7.067,11,2,5,0.4,1,2,0.5,1,2,0.5,1,1,1,0,2,0,0.504,0.5,0,0,0,0,0,0,0,0,1,0,6,1.9
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,ARMANDO.BACOT,29.016,48,5,8,0.625,0,0,0,2,2,1,4,4,1,1,4,0.25,0.67,0.625,1,1,1,4,7,0,0,1,1,1,12,12.6
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,BRANDON.ROBINSON,30.634,49,5,8,0.625,5,6,0.833,2,2,1,0,1,0,0,1,0,0.95,0.938,0,0,0,2,4,2,1,2,0,2,17,19
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,CALEB.ELLIS,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,CHRISTIAN.KEELING,17.783,28,1,5,0.2,0,1,0,2,2,1,0,1,0,1,3,0.333,0.336,0.2,0,0,0,0,3,1,1,0,0,2,4,2.7
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,COLE.ANTHONY,34.4,56,3,10,0.3,1,3,0.333,3,5,0.6,0,0,0,2,7,0.286,0.404,0.35,0,0,0,1,7,4,1,0,4,2,10,5.2
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,GARRISON.BROOKS,33.683,54,6,11,0.545,0,0,0,8,10,0.8,4,7,0.571,2,4,0.5,0.635,0.545,0,1,0,1,3,2,0,1,1,0,20,16.6
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,JEREMIAH.FRANCIS,2.5,4,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,JUSTIN.PIERCE,15.233,22,2,3,0.667,0,0,0,0,0,0,2,2,1,0,1,0,0.667,0.667,2,2,1,2,3,1,0,0,0,0,4,5.7
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,KJ.SMITH,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,LEAKY.BLACK,25.85,41,2,4,0.5,0,1,0,1,2,0.5,1,1,1,1,2,0.5,0.505,0.5,1,1,1,1,5,4,0,0,0,3,5,6.4
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,ROBBIE.OHAN,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,RYAN.MCADOO,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,SHEA.RUSH,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4956940,3/10/2020,Virginia Tech,North Carolina,North Carolina,WALKER.MILLER,2.167,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0.3
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,ANDREW.PLATEK,8.633,15,0,3,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,-1.5
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,ARMANDO.BACOT,25.284,46,3,7,0.429,0,0,0,2,2,1,1,4,0.25,2,3,0.667,0.503,0.429,0,2,0,3,3,3,0,0,0,2,8,8.6
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,BRANDON.ROBINSON,23.067,44,1,4,0.25,0,3,0,2,2,1,0,0,0,1,1,1,0.404,0.25,0,0,0,0,1,0,0,0,4,4,4,-3.7
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,CALEB.ELLIS,2.017,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,CHRISTIAN.KEELING,15.3,29,0,3,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,6,0,0,0,1,1,0,-1.7
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,COLE.ANTHONY,36.483,66,2,10,0.2,1,6,0.167,0,0,0,1,2,0.5,0,2,0,0.25,0.25,0,0,0,0,4,3,0,0,6,3,5,-5.1
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,GARRISON.BROOKS,37.217,68,7,14,0.5,0,0,0,4,6,0.667,4,6,0.667,3,8,0.375,0.534,0.5,2,2,1,2,3,0,0,1,2,3,18,10
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,JEREMIAH.FRANCIS,9.05,15,0,3,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,-1.8
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,JUSTIN.PIERCE,9.317,19,1,2,0.5,0,0,0,0,0,0,1,1,1,0,1,0,0.5,0.5,0,0,0,2,2,0,0,0,1,1,2,1.6
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,KJ.SMITH,1.083,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0.7
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,LEAKY.BLACK,24.316,44,5,10,0.5,1,2,0.5,3,3,1,2,3,0.667,2,5,0.4,0.613,0.55,0,1,0,2,2,1,0,0,3,3,14,7.5
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,ROBBIE.OHAN,1.183,3,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.7
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,RYAN.MCADOO,2.017,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,SHEA.RUSH,2.017,4,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,-1.4
+4958802,3/11/2020,Syracuse,North Carolina,North Carolina,WALKER.MILLER,2.017,4,1,2,0.5,0,0,0,0,0,0,1,2,0.5,0,0,0,0.5,0.5,0,0,0,0,0,0,0,0,0,0,2,1

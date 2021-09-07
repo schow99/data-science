@@ -1,0 +1,13 @@
+name: unc_basketball
+title:
+username:
+account: schow99
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3303620
+bundleId: 4865940
+url: https://schow99.shinyapps.io/unc_basketball/
+when: 1627504593.30066
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|Learning Functions.Rmd|NCAA HoopR Functions.Rmd|unc_lineups_2019_20.csv|unc_lineups_by_game_2020_21.csv|unc_play_by_play_2019_20.csv|unc_player_stats_2019_20.csv|unc_schedule_2019_20.csv

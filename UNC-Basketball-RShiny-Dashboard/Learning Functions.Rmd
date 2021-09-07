@@ -1,0 +1,162 @@
+---
+title: "bigballR Intro"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#devtools::install_github("jflancer/bigballR")
+library(tidyverse)
+library(bigballR)
+```
+
+
+```{r}
+schedule = get_team_schedule(season = "2020-21", team.name = "North Carolina")
+play_by_play = get_play_by_play(schedule$Game_ID)
+
+play_by_play$Date[play_by_play$ID == 4982651] = "11/25/2020"
+play_by_play$Date[play_by_play$ID == 4984928] = "12/12/2020"
+play_by_play$Date[play_by_play$ID == 4986554] = "12/22/2020"
+play_by_play$Date[play_by_play$ID == 4987520] = "01/02/2021"
+play_by_play$Date[play_by_play$ID == 4987960] = "01/05/2021"
+play_by_play$Date[play_by_play$ID == 4989289] = "01/12/2021"
+play_by_play$Date[play_by_play$ID == 4990820] = "01/20/2021"
+play_by_play$Date[play_by_play$ID == 4991616] = "01/23/2021"
+play_by_play$Date[play_by_play$ID == 4996842] = "02/06/2021"
+play_by_play$Date[play_by_play$ID == 5001764] = "02/17/2021"
+play_by_play$Date[play_by_play$ID == 5003871] = "02/20/2021"
+play_by_play$Date[play_by_play$ID == 5006989] = "02/24/2021"
+play_by_play$Date[play_by_play$ID == 5012369] = "03/01/2021"
+
+```
+
+```{r}
+game_ids = unique(play_by_play$ID)
+
+lineups_by_game = data.frame()
+
+for(i in 1:length(game_ids)){
+  game_play_by_play = play_by_play %>% 
+    filter(ID == game_ids[i])
+  
+  game = get_lineups(play_by_play_data = game_play_by_play, keep.dirty = T, garbage.filter = F) %>%
+    filter(Team == "North Carolina")
+  opponent = c(game_play_by_play$Home[1], game_play_by_play$Away[1])
+  opponent = opponent[opponent != "North Carolina"]
+  game$Opponent = opponent
+  lineups_by_game = rbind(lineups_by_game, game)
+}
+```
+
+
+```{r}
+lineups = get_lineups(play_by_play_data = play_by_play, keep.dirty = T, garbage.filter = F) %>% filter(Team == "North Carolina") 
+lineups
+
+write.csv(lineups, file = "unc_lineups_2020_21.csv", row.names = F)
+
+#write.csv(lineups_by_game, file = "unc_lineups_by_game_2020_21.csv", row.names = F)
+
+
+player_stats = get_player_stats(play_by_play) %>%
+  filter(Team == "North Carolina") 
+write.csv(player_stats, file = "unc_player_stats_2020_21.csv", row.names = F)
+```
+
+```{r}
+player_stats %>% 
+  filter(Player == "ARMANDO.BACOT") 
+```
+
+
+```{r}
+lineups %>%
+  filter_at(vars(player_columns), any_vars(. %in% "GARRISON.BROOKS"))
+```
+
+```{r}
+opponents = c("Col. of Charleston", "Stanford")
+lineups_by_game = lineups_by_game[lineups_by_game$Opponent %in% opponents,] %>% 
+  arrange(desc(Mins)) %>%
+  select(P1, P2, P3, P4, P5, Mins, Opponent)
+```
+
+```{r}
+create_lineup = function(lineup_whole){
+      final_lineup = data.frame()
+      
+      unique_lineups = unique(lineup_whole[, c("P1", "P2", "P3", "P4", "P5")])
+      # 
+      # final_lineup$P1 = lineup_whole$P1
+      # final_lineup$P2 = lineup_whole$P2
+      # final_lineup$P3 = lineup_whole$P3
+      # final_lineup$P4 = lineup_whole$P4
+      # final_lineup$P5 = lineup_whole$P5
+      # 
+      # final_lineup$Mins = lineup_whole %>%
+      #   group_by(P1, P2, P3, P4, P5) %>%
+      #   summarise(Mins = sum(Mins))
+      # 
+      return (unique_lineups)
+      
+}
+
+create_lineup(lineups_by_game)
+
+
+```
+
+```{r}
+get_player_stats(play_by_play) %>%
+  filter(Team == "North Carolina") 
+```
+
+
+```{r}
+player_stats = get_player_stats(play_by_play) %>%
+  filter(Team == "North Carolina") 
+write.csv(player_stats, file = "unc_player_stats_2020_21.csv", row.names = F)
+```
+
+
+
+```{r}
+brooks_comparison = on_off_generator("GARRISON.BROOKS", lineups, Included = "ANDREW.PLATEK")
+```
+
+```{r}
+brooks_stats = get_player_stats(play_by_play) %>% 
+  filter(Player == "GARRISON.BROOKS")
+```
+
+
+```{r}
+brooks_shots = play_by_play %>%
+  filter(Player_1 == "GARRISON.BROOKS") %>%
+  filter(!is.na(Event_Result))
+```
+
+```{r}
+ggplot(brooks_shots, aes(x = Event_Type)) + geom_bar(stat = 'count')
+```
+
+```{r}
+brooks_makes_miss = brooks_shots %>%
+  group_by(Event_Type, Event_Result) %>%
+  summarize(n = n()) %>%
+  spread(Event_Result, n) %>%
+  mutate(percent_made = made / (made + missed))
+
+ggplot(brooks_makes_miss, aes(x = Event_Type, y = percent_made, label = round(percent_made, digits = 3))) +
+  geom_bar(stat = "identity") + 
+  geom_text(vjust = -1) + 
+  xlab("Shot Type") + 
+  ylab("Percent Made")
+```
+
+
+

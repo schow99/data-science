@@ -1,0 +1,20 @@
+---
+title: "NCAA HoopR"
+author: "Samuel Chow"
+date: "11/26/2020"
+output: html_document
+---
+
+
+```{r}
+library(ncaahoopR)
+```
+
+```{r}
+game_shot_chart(game_id = 401168159)
+```
+
+```{r}
+get_game_ids("Notre Dame", "2019-20")
+```
+

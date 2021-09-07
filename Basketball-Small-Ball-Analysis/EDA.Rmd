@@ -1,0 +1,292 @@
+---
+title: "Exploratory Data Analysis"
+author: "STOR 320.(01 OR 02) Group PLACE_GROUP_NUMBER_HERE (Ex: STOR 320.01 Group 12)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+
+players = read_csv("players_updated.csv")
+```
+
+# Orator: Samuel Chow
+
+### Q1: How comparable are NCAA shooting stats to NBA stats? Is FT% generally the same but we see a slight decline in FG% and 3PFG%?
+
+```{r}
+shooting = select(players, name, nba_3ptpct, nba_3ptpg, nba_efgpct, nba_fg, nba_fg_per_game, nba_ft, ncaa_3ptpct, ncaa_3ptpg, ncaa_efgpct, ncaa_fgpct, ncaa_fgpg, ncaa_ft)
+
+players$diff_ft = players$nba_ft - players$ncaa_ft
+players$diff_fg = players$nba_fg - players$ncaa_fgpct
+players$diff_3ptpct = players$nba_3ptpct - players$ncaa_3ptpct
+
+with_ft = players %>%
+  filter(!is.na(diff_ft))
+
+with_fg = players %>% 
+  filter(!is.na(diff_fg))
+
+with_3ptpct = players %>%
+  filter(!is.na(diff_3ptpct))
+
+
+ggplot(with_ft, aes(x = diff_ft)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0) + ggtitle("Free throw difference between college and the NBA") + xlab("Percentage difference")
+
+ggplot(with_fg, aes(x = diff_fg)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0) + ggtitle("Field goal difference between college and the NBA") + xlab("Percentage difference")
+
+ggplot(with_3ptpct, aes(x = diff_3ptpct)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0) + ggtitle("3 point difference between college and the NBA") + xlab("Percentage difference")
+
+
+increase_ft = sum(with_ft$diff_ft > 0) / nrow(with_ft)
+increase_fg = sum(with_fg$diff_fg > 0) / nrow(with_fg)
+increase_3ptpct = sum(with_3ptpct$diff_3ptpct > 0) / nrow(with_3ptpct)
+
+df = data.frame(shooting = c("Free Throw Percentage", "Field Goal Percentage", "Three Point Percentage"), percentage = c(increase_ft, increase_fg, increase_3ptpct))
+
+df = df %>% 
+  rename("Shooting Statistic" = shooting, "Percent of Players Increase" = percentage)
+
+df
+```
+
+### Q2: Which conference sends the most players to the NBA?
+
+```{r}
+conference_count = players %>% 
+  group_by(conference) %>%
+  tally()%>%
+  rename(Conference = conference, Count = n)
+
+conference_count
+```
+
+```{r}
+conference_count_since2000 = players %>% 
+  filter(active_from >= 2000) %>%
+  group_by(conference) %>%
+  tally() %>%
+  rename("Conference" = conference, "Count Since 2000" = n)
+
+conference_count_since2000
+
+```
+
+
+# Follow-up Questions
+
+### New Questions Based Off Initial Investigation
+
+- Q1: WRITE_QUESTION_HERE
+- Q2: WRITE_QUESTION_HERE
+- Q3: WRITE_QUESTION_HERE 
+- Q4: WRITE_QUESTION_HERE
+
+### Investigation of Follow-up Questions
+
+GIVE WHAT 2 QUESTIONS YOU ATTEMPTED TO INVESTIGATE FURTHER IN COMPLETE SENTENCES (*Example:* Our group decided to investigate Q2 and Q4 in further detail.)
+
+SHOW AT LEAST 2 TABLES OR FIGURES BELOW THAT EXPLORE ANSWERS FOR THE QUESTIONS YOU ARE INVESTIGATING FURTHER.
+
+
+#### Change in shooting percentages by position
+```{r}
+diff_pos_ft = with_ft %>% 
+  group_by(position) %>%
+  summarize(mean = mean(diff_ft))
+
+diff_pos_ft
+
+diff_pos_fg = with_fg %>% 
+  group_by(position) %>%
+  summarize(mean = mean(diff_fg))
+
+diff_pos_fg
+
+diff_pos_3p = with_3ptpct %>% 
+  group_by(position) %>%
+  summarize(mean = mean(diff_3ptpct))
+
+diff_pos_3p
+```
+
+
+### Q1
+
+#### Looking at top scorers in the NCAA
+```{r}
+top800 = players[order(-players$ncaa_ppg),]
+top800 = top800[1:800,]
+
+top800 = top800 %>% 
+  filter(!is.na(diff_ft)) %>% 
+  filter(!is.na(diff_fg)) %>% 
+  filter(!is.na(diff_3ptpct))
+
+top800$ppg_diff = top800$nba_ppg - top800$ncaa_ppg
+ggplot(top800, aes(x = ppg_diff)) + geom_histogram(breaks = seq(-30,30, by = 1)) + geom_vline(xintercept = 0)
+```
+```{r}
+ggplot(top800, aes(x = diff_ft)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0)
+quantile(top800$diff_ft)
+
+```
+
+
+```{r}
+ggplot(top800, aes(x = diff_fg)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0)
+quantile(top800$diff_fg)
+
+```
+
+
+```{r}
+ggplot(top800, aes(x = diff_3ptpct)) + geom_histogram(breaks = seq(-1,1,by=0.05)) + geom_vline(xintercept = 0)
+quantile(top800$diff_3ptpct)
+```
+
+
+
+```{r}
+better_3ptpct = subset(top800, diff_3ptpct > 0)
+ggplot(better_3ptpct, aes(x = ncaa_efgpct)) + geom_histogram()
+
+worse_3ptpct = subset(top800, diff_3ptpct < 0)
+ggplot(worse_3ptpct, aes(x = ncaa_efgpct)) + geom_histogram()
+
+mean(better_3ptpct$ncaa_efgpct)
+mean(worse_3ptpct$ncaa_efgpct)
+```
+
+```{r}
+ggplot(better_3ptpct, aes(x = ncaa_ft)) + geom_histogram()
+ggplot(worse_3ptpct, aes(x = ncaa_ft)) + geom_histogram()
+mean(better_3ptpct$ncaa_ft)
+mean(worse_3ptpct$ncaa_ft)
+```
+
+## Q2
+
+#### Subsetting to 3 point shooters above and below 37%
+```{r}
+allShooting = players %>%
+  filter(!is.na(diff_ft)) %>% 
+  filter(!is.na(diff_fg)) %>% 
+  filter(!is.na(diff_3ptpct))
+
+above37_3ptpct = subset(allShooting, nba_3ptpct > 0.37)
+below37_3ptpct = subset(allShooting, nba_3ptpct < 0.37)
+```
+
+#### Comparing NCAA 3 point percentages for the two sets
+```{r}
+mean(above37_3ptpct$ncaa_3ptpct)
+mean(below37_3ptpct$ncaa_3ptpct)
+
+quantile(above37_3ptpct$ncaa_3ptpct)
+quantile(below37_3ptpct$ncaa_3ptpct)
+
+ggplot(above37_3ptpct, aes(x = ncaa_3ptpct)) + geom_histogram() + ggtitle("3 point percentage in NCAA for NBA players shooting about 37% from 3") + xlab("Free throw percentage")
+ggplot(below37_3ptpct, aes(x = ncaa_3ptpct)) + geom_histogram() + ggtitle("3 point percentage in NCAA for NBA players shooting below 37% from 3") + xlab("Free throw percentage")
+```
+
+#### Comparing NCAA 3 free throw percentages for the two sets
+
+```{r}
+mean(above37_3ptpct$ncaa_ft)
+mean(below37_3ptpct$ncaa_ft)
+
+quantile(above37_3ptpct$ncaa_ft)
+quantile(below37_3ptpct$ncaa_ft)
+
+ggplot(above37_3ptpct, aes(x = ncaa_ft)) + geom_histogram() + ggtitle("Free throw percentage in NCAA for NBA players shooting about 37% from 3") + xlab("Free throw percentage")
+ggplot(below37_3ptpct, aes(x = ncaa_ft)) + geom_histogram() + ggtitle("Free throw percentage in NCAA for NBA players shooting below 37% from 3") + xlab("Free throw percentage")
+```
+
+#### Comparing NBA free throw percentages for the two sets
+```{r}
+mean(above37_3ptpct$nba_ft)
+mean(below37_3ptpct$nba_ft)
+
+quantile(above37_3ptpct$nba_ft)
+quantile(below37_3ptpct$nba_ft)
+```
+
+#### Comparing NCAA field goal percentages for the two sets
+
+```{r}
+mean(above37_3ptpct$ncaa_fgpct)
+mean(below37_3ptpct$ncaa_fgpct)
+
+quantile(above37_3ptpct$ncaa_fgpct)
+quantile(below37_3ptpct$ncaa_fgpct)
+```
+
+#### Comparing NBA field goal percentages for the two sets
+
+```{r}
+mean(above37_3ptpct$nba_fg)
+mean(below37_3ptpct$nba_fg)
+
+quantile(above37_3ptpct$nba_fg)
+quantile(below37_3ptpct$nba_fg)
+```
+
+
+#### Comparing weight for the two sets
+```{r}
+ggplot(allShooting, aes(x = weight, y = nba_3ptpct)) + geom_point()
+
+ggplot(above37_3ptpct, aes(x = weight, y = nba_3ptpct)) + geom_point()
+ggplot(below37_3ptpct, aes(x = weight, y = nba_3ptpct)) + geom_point()
+
+mean(above37_3ptpct$weight)
+mean(below37_3ptpct$weight)
+
+quantile(above37_3ptpct$weight)
+quantile(below37_3ptpct$weight)
+```
+
+#### Comparing height for the two sets
+```{r}
+ggplot(allShooting, aes(x = height_inches, y = nba_3ptpct)) + geom_point()
+
+ggplot(above37_3ptpct, aes(x = height_inches, y = nba_3ptpct)) + geom_point()
+ggplot(below37_3ptpct, aes(x = height_inches, y = nba_3ptpct)) + geom_point()
+
+mean(above37_3ptpct$height_inches)
+mean(below37_3ptpct$height_inches)
+
+quantile(above37_3ptpct$height_inches)
+quantile(below37_3ptpct$height_inches)
+```
+
+
+#Summary
+
+
+
+
+GIVE A 2 PARAGRAPH SUMMARY. 
+
+PARAGRAPH 1 SHOULD DESCRIBE WHAT YOU LEARNED ABOUT YOUR DATA FROM INVESTIGATING THE INITIAL QUESTIONS. DID YOU FIND ANYTHING UNUSUAL IN YOUR DATA? DID ANYTHING SURPRISE YOU? WHICH OF THE INITIAL QUESTIONS WERE HELPFUL IN LEADING YOU TO MORE QUESTIONS?
+
+PARAGRAPH 2 SHOULD SUMMARIZE WHAT YOU LEARNED FROM INVESTIGATING THE FOLLOW-UP QUESTIONS. WHY ARE THESE FOLLOW-UP QUESTIONS INTERESTING FOR INVESTIGATION? DESCRIBE THE TABLES/FIGURES YOU USED TO EXPLORE ANSWERS TO THESE FOLLOW-UP QUESTIONS? WHAT DID YOU LEARN FROM THE TABLES/FIGURES REGARDING THE FOLLOW-UP QUESTIONS YOU PROPOSED?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

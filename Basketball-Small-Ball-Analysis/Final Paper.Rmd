@@ -1,0 +1,356 @@
+---
+title: "Final Paper"
+author: "STOR 320.002 Samuel Chow (Group 21)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(kableExtra)
+library(devtools)
+devtools::install_github('cttobin/ggthemr')
+#library(ggthemr)
+players = read_csv("players_updated.csv")
+```
+
+# INTRODUCTION
+
+Over the past five years, data analytics has been the driving factor to the drastic changes in playing style seen in the NBA. Teams are favoring the 3-point shot over any other shot, and small ball basketball has become more and more popular. "Small ball" basketball is a strategy that favors better shooters and passers while typically sacrificing height and strength. For example, a shorter player who tradationally plays the forward position could potentially play the center position in a small ball lineup. An example of this in today's NBA is Draymond Green on the Golden State Warriors. When used in the Warriors small ball lineup, Draymond plays the center position which is typically the tallest position on the team. His height is 6'6", but the average center position height is 6'11". Draymond is smaller than most centers, but the Warriors find it more effective when he plays that position since he is strong yet quick and he can provide flexibility. There are a few other teams who employ small ball lineups as well. The reasons are simple: more 3-pointers lead to more points, and having smaller players who can do everything allows for immense amounts of offensive and defensive versatility. 
+
+To explore these two concepts taking over today's game, we decided to take a look at a data set that includes both NCAA and NBA statistics for NBA players between 1947 and the end of the 2017-18 season. After working with and exploring the data set, we came up with two questions we asked about the changing landscape of the NBA. First, is there a combination of NCAA stats that is a good predictor of NBA 3-point shooting percentage? This question can be valuable for NBA teams when scouting NCAA players; it can also be used by college players themselves to focus a part of their game that may help them succeed more in the NBA. Second, can we predict a player’s position given their NCAA stats and physical attributes? If a player is predicted to play more than one position, such position flexibility can enable teams to employ a small ball lineup.
+
+When initially thinking about the best way to predict NBA 3-point percentage, the obvious answer might be to take a look at a player's NCAA 3-point percentage. We wanted to see if that intuition was actually true, and if there are other predictors of 3-point percentage that might not be so obvious. Looking at a player's height or weight appears to be the most direct method to predict a player's position; however, statistical models may provide different insights. By investigating the numbers, we are becoming a part of the analytics-driven movement that has taken the basketball world by storm. 
+
+
+
+# DATA
+
+Our data came from two places. The first part of the set comes basketball-reference.com, a very reputable and comprehensive website that hosts the statistics of NBA, ABA, WNBA, and European players and games. This is how we gathered the NBA statistics for the players. The second part of our data set comes from sports-reference.com, a very similar site that includes statistics for NCAA basketball players. The NCAA data was merged onto the NBA players;  all the NBA players were kept but the NCAA players who didn't play the NBA did not show up in our final data set. We had a total of 4576 NBA players in our original data set. 
+
+We originally had 40 variables in our data set, but we determined a subset of variables that would be important to explore the two questions. *Position* indicates which position or positions in the NBA the player played. The position can be C for center, F for forward, G for guard, C-F for center forward (if they played both positions but spent more time at center), F-C for forward center, G-F for guard forward, or F-G for forward guard. *Height_Inches* indicates the player's height in units of inches. *NBA_PPG* and *NCAA_PPG* is the average points per game throughout a player's career in the two leagues (NBA and NCAA), respectively. *NBA_FT_Pct* and *NCAA_FT_Pct* is a player's career free throw percentage in the two leagues. *NBA_3PT_Pct* and *NCAA_3Pt_Pct* is a player's career 3-point percentage in the two leagues. *NBA_3pt_PG* and *NCAA_3Pt_PG* is the average number of 3 pointers made per game in a player's career in the two leagues. *NBA_FG_Pct* and *NCAA_FG_Pct* is a player's career field goal percentage in the two leagues. *NBA_FG_PG* and *NCAA_FG_PG* is the average number of field goals made per game in the two leagues. *NBA_EFG_Pct* and *NCAA_EFG_Pct* is a player's career effective field goal percentage in the two leagues. Effective field goal percentage is a created statistic that adjusts for the fact that 3 pointers count for 3 points, two pointers count for two points, and free throws count for one point, giving a more comprehensive understanding of a player's shooting in one single statistic. We also created variables that calculated the difference in shooting percentages for the chosen statistics between the two leagues. These variables were *Diff_FT_Pct*, *Diff_3Pt_Pct*, *Diff_FG_Pct*, and *Diff_EFG_PCT*. We added these variables to see if players got better or worse at shooting between the NCAA and the NBA. 
+
+Below is just a few rows of famous players in the data set. As you can see, Giannis and Kobe have no NCAA statistics because they didn't play in the NCAA. Additionally, George Mikan from the late 1940s and 1950s has some missing statistics due to the fact that the NBA and the NCAA didn't have a 3-point line during his era. Similarly, Rick Barry in the 1960s and 70s had NBA 3-point statistics, but the 3-point ball wasn't implemented during his college days. I selected these players to give a snapshot of the data because there is a lot of missing data that we had to deal with. However, more players from a more recent era like Steph Curry, Kawhi Leonard, and even Michael Jordan will have all the statistics. 
+
+```{r, echo = F, warning = F}
+players$diff_ft = players$nba_ft - players$ncaa_ft
+players$diff_fg = players$nba_fg - players$ncaa_fgpct
+players$diff_3ptpct = players$nba_3ptpct - players$ncaa_3ptpct
+players$diff_efg = players$nba_efgpct - players$ncaa_efgpct
+
+players_shooting = select(players, name, position, height_inches, weight, nba_ppg, ncaa_ppg, nba_ft, ncaa_ft, diff_ft, nba_3ptpct, ncaa_3ptpct, diff_3ptpct, nba_3ptpg, ncaa_3ptpg, nba_fg, ncaa_fgpct, diff_fg, nba_fg_per_game, ncaa_fgpg, nba_efgpct, ncaa_efgpct, diff_efg)
+names(players_shooting) = c("Name", "Position", "Height_Inches", "Weight", "NBA_PPG", "NCAA_PPG", "NBA_FT_Pct", "NCAA_FT_Pct", "Diff_FT_Pct", "NBA_3Pt_Pct", "NCAA_3Pt_Pct", "Diff_3Pt_Pct", "NBA_3Pt_PG", "NCAA_3Pt_PG", "NBA_FG_Pct", "NCAA_FG_Pct", "Diff_FG_Pct", "NBA_FG_PG", "NCAA_FG_PG", "NBA_EFG_Pct", "NCAA_EFG_Pct", "Diff_EFG_Pct")
+
+
+players_shooting %>% filter(Name %in% c("George Mikan", "Rick Barry", "Magic Johnson", "Kobe Bryant", "Stephen Curry", "Giannis Antetokounmpo", "Michael Jordan", "Kawhi Leonard")) %>% kable() %>%
+  kable_styling()
+```
+
+The best way to handle the missing values from the players was to simply take them out of the data set; we chose to do this because a lot of our analysis heavily relied on the relationship between NCAA and NBA statistics, there was no point in keeping players who we couldn't apply the prediction models to. By taking out players with missing values, we essentially take out any players who played in the NCAA before 1979, which is when the 3-point line was introduced in college. Below is a sample of the first 10 players in the final data set we used. This final data set had 1543 observations. 
+
+```{r, echo = F, warning = F}
+players_final = players_shooting %>% 
+  filter(!is.na(Diff_FT_Pct)) %>% 
+  filter(!is.na(Diff_FG_Pct)) %>% 
+  filter(!is.na(Diff_3Pt_Pct)) %>% 
+  filter(!is.na(Diff_EFG_Pct))
+
+head(players_final, n = 5)%>% kable() %>%
+  kable_styling()
+```
+
+Finally, there are graphs below that will contextualize the two questions were are trying to answer. 
+
+First is a histogram of the NBA 3-point percentages. We can see that most players fall between 30% and 45% with a peak right about 35%. 
+```{r, message = F, warning = F, echo = F}
+ggthemr("flat")
+
+ggplot(players_final, aes(x = NCAA_3Pt_Pct)) + geom_histogram() + ggtitle("Distribution of NBA 3-point Percentage") + xlab("NBA 3-point percentage") + xlim(0,1) +  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+
+Below is a bar chart noting the counts of the different positions to explore the distirbution of positions in the NBA. Even though there are 2 guards, 2 forwards, and 1 center in a traditional lineup, we see that the NBA is a guard-heavy league. 
+
+```{r, echo = F, warning = F}
+ggplot(players_final, aes(x = Position)) + geom_bar() + ggtitle("Count of NBA Positions") + theme(plot.title = element_text(hjust = 0.5))
+```
+
+
+# RESULTS
+
+#### Question 1: Is there a good predictor in NBA 3-point shooting percentages based on NCAA stats?
+
+
+```{r, message = F, echo = F, warning = F}
+library(caTools)
+set.seed(124)
+players_final$above36 = players_final$NBA_3Pt_Pct >= 0.36
+players_final$above36 = as.integer(as.logical(players_final$above36))
+players_final_noOutliers = players_final %>%
+  filter(NBA_3Pt_Pct > 0) %>%
+  filter(NBA_3Pt_Pct < 1)
+players_final_subset = players_final_noOutliers[,c(10, 23, 2, 3, 4, 6, 8, 11, 14, 16, 19, 21)]
+
+#write.csv(x=players_final_subset, file="final_shooting.csv")
+
+
+sample = sample.split(players_final_subset,SplitRatio = 0.8)
+train =subset(players_final_subset,sample ==TRUE) 
+test=subset(players_final_subset, sample==FALSE)
+```
+
+To answer our first question, I wanted to look solely at NCAA shooting stats, so I excluded any NBA stats when predicting NBA 3-point shooting percentage. I created many different linear models that had different predictors based on the individual significance of the predictors. I started off with the most significant predictors and kept on adding additional predictors to test new models. They are: 
+
+Model 1: NCAA Free Throw Percentage
+
+Model 2: NCAA Free Throw Percentage + NCAA 3-point Attempts Per Game
+
+Model 3: NCAA Free Throw Percentage + NCAA 3-point Attempts Per Game + NCAA 3-point Percentage
+
+Model 4: NCAA Free Throw Percentage + NCAA 3-point Attempts Per Game + NCAA Points Per Game
+
+Model 5:  NCAA Free Throw Percentage + NCAA 3-point Attempts Per Game + NCAA Points Per Game + NCAA Effective Field Goal Percentage
+
+
+
+To create the model, I split our data set randomly so that 80% of the data would be used for training and 20% would be used for testing. All of these models were based on the training data. To analyze the models' effectiveness, I looked at the root mean square error (RMSE) value on the testing set. Below is a bar chart of the RMSE values for the different models. There is slight dip in the error values as I add additional terms, but the RMSE approximately levels out after model 2. This suggests that the most effective while simple model is model 2 which consists of NCAA free throw percentage and NCAA 3-point attempts per game. The RMSEs for the 5 models we tried range from 0.091 to 0.087, with model 2 having an RMSE of 0.088. None of these values are great considering that the range for the prediction is between 0 and 1. 
+
+```{r, echo = F, warning = F, message = F}
+#model = lm(NBA_3Pt_Pct ~., data = players_final_subset)
+#summary(model)
+
+mod1 = lm(NBA_3Pt_Pct ~ NCAA_FT_Pct, data = train)
+mod2 = lm(NBA_3Pt_Pct ~ NCAA_FT_Pct + NCAA_3Pt_PG, data = train)
+mod3 = lm(NBA_3Pt_Pct ~ NCAA_FT_Pct + NCAA_3Pt_PG + NCAA_3Pt_Pct, data = train)
+mod4 = lm(NBA_3Pt_Pct ~ NCAA_FT_Pct + NCAA_3Pt_PG + NCAA_PPG, data = train)
+mod5 = lm(NBA_3Pt_Pct ~ NCAA_FT_Pct + NCAA_3Pt_PG + NCAA_PPG + NCAA_EFG_Pct, data = train)
+
+
+RMSE = function(m, o){
+  sqrt(mean((m - o)^2))
+}
+
+
+mod1_pred = predict(mod1, newdata = test)
+mod1RMSE = RMSE(mod1_pred, test$NBA_3Pt_Pct)
+
+mod2_pred = predict(mod2, newdata = test)
+mod2RMSE = RMSE(mod2_pred, test$NBA_3Pt_Pct)
+
+mod3_pred = predict(mod3, newdata = test)
+mod3RMSE = RMSE(mod3_pred, test$NBA_3Pt_Pct)
+
+mod4_pred = predict(mod4, newdata = test)
+mod4RMSE = RMSE(mod4_pred, test$NBA_3Pt_Pct)
+
+mod5_pred = predict(mod5, newdata = test)
+mod5RMSE = RMSE(mod5_pred, test$NBA_3Pt_Pct)
+
+
+
+allRMSE = c(mod1RMSE, mod2RMSE, mod3RMSE, mod4RMSE, mod5RMSE)
+labels = c ("Model 1", "Model 2", "Model 3", "Model 4", "Model 5")
+
+RMSE = data.frame(labels, allRMSE)
+
+ggplot(data = RMSE, aes(x = labels, y = allRMSE)) + geom_bar(stat = "identity") + xlab("Model") + ylab("RMSE") + ggtitle("RMSE for Different 3-Point Prediction Models") + theme(plot.title = element_text(hjust = 0.5))
+
+
+```
+
+In continuing to explore the model results, below is a plot of a player's true NBA 3-point percentage compared to what model 2, which used NCAA free throw percentage and NCAA 3-point attempts per game, predicted. If the model predicted the values perfectly, all the points would fall on the red line. The results are rather disappointing. The model is able to predict some of the data points well, but for the most part, it seems that the model does not do a great job. The model produced a correlation value of 0.328, which is not very good. This correlation value means that there is a weak relationship between the variables chosen and predicting NBA 3-point percentage. There is either missing essential data to predict NBA 3-point percentage or there is simply no strong relationship between any recorded statistics and 3-point percentage. 
+
+```{r, echo = F, warning = F, message = F}
+test$predict_3P_Pct = mod4_pred
+
+ggplot(data = test, aes(x = NBA_3Pt_Pct, y = predict_3P_Pct)) + geom_point() + xlim(0,0.7) + ylim(0,0.7) + geom_abline(slope=1, color = "red") + xlab("True NBA 3-point Percentage") + ylab("Model 2 Prediction for NBA 3-point Percentage") + ggtitle("True vs Predict NBA 3-point Percentage\nCorrelation: 0.328")+ theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+
+```{r, echo = F, warning = F, message = F}
+library(caret)
+
+mod2 = glm(above36 ~ NCAA_3Pt_Pct + NCAA_FT_Pct + NCAA_3Pt_PG, data = train, family = "binomial")
+NBA_3Pt_Fit_logistic = predict(mod2, newdata = test, type = "response")
+NBA_3Pt_Fit_logistic <- ifelse(NBA_3Pt_Fit_logistic >= 0.36,1,0)
+
+test$NBA_3Pt_Predict_logistic = as.factor(NBA_3Pt_Fit_logistic)
+test$above36 = as.factor(test$above36)
+
+misClasificError <- mean(NBA_3Pt_Fit_logistic != test$above36)
+
+#print(paste('Accuracy',1-misClasificError))
+```
+
+
+```{r, echo = F, warning = F, include = F}
+
+mod1 = lm(NBA_3Pt_Pct ~ NCAA_3Pt_Pct + NCAA_FT_Pct + NCAA_3Pt_PG, data = train)
+
+NBA_3Pt_Fit = predict(mod1, newdata = test)
+#cor(test$NBA_3Pt_Pct, NBA_3Pt_Fit)
+
+test$NBA_3Pt_Predict = NBA_3Pt_Fit
+
+ggplot(data = test, aes(x = NBA_3Pt_Pct , y = NBA_3Pt_Predict)) + geom_point() + xlim(0,0.5) + ylim(0,0.5)+ geom_abline(slope=1, color = "red")
+
+
+holdout_residuals = test$NBA_3Pt_Pct - test$NBA_3Pt_Predict
+hist(holdout_residuals)
+
+```
+
+
+
+### Question 2: How can we best predict a player’s position given their stats and physical attributes?
+
+When trying to predict a player's position, I decided to include physical attributes (height, weight), along with all of the player's NBA and NCAA shooting statistics. To simplify the uestion a bit more, I reduced any players with two positions (G-F, F-G, F-C, C-F) and made their position the one they played the most (the first letter in the position variable). This left us with three options: G, F, and C for guard, forward, and center. 
+
+##### Model 1
+
+To approach this question, I decided to use a random forest model so that we wouldn't have to worry about overfitting issues. The model was based off of the train data set which had 80% of the players. Out of the 366 players in the test set, the model properly predicted 328, resulting in an accuracy of about 90%. This means that based on a player's height, weight, and shooting statistics, one can successfully infer a player's primary position about 9 out of 10 times. The results of this model are good. Below is a confusion matrix which displays the model position predictions compared to the actual positions the players played. 
+
+```{r, message = F, warning = F, echo = F}
+library(rpart)
+library(rpart.plot)
+library(caTools)
+set.seed(124)
+
+players_positions_condensed = players_final
+
+primary_position = function(pos){
+  x = substring(pos, 1, 1)
+  if (x == "G"){
+    return (0)
+  }
+  if (x == "F"){
+    return (1)
+  }
+  if (x == "C") {
+    return (2)
+  }
+}
+
+
+players_positions_condensed$Position = sapply(players_positions_condensed$Position, primary_position) 
+
+players_positions_condensed$Position= as.factor(players_positions_condensed$Position)
+
+players_positions_condensed = players_positions_condensed[,c(2:22)]
+```
+
+
+```{r, message = F, warning = F, echo = F}
+sample2 = sample.split(players_positions_condensed,SplitRatio = 0.8)
+train2 = subset(players_positions_condensed,sample2 ==TRUE) 
+test2 = subset(players_positions_condensed, sample2 == FALSE)
+#fit = rpart(Position~., data = players_final, method = 'class')
+#rpart.plot(fit, extra = 106)
+```
+
+
+```{r, message =F, warning=F, echo = F}
+library(randomForest)
+library(caret)
+library(scales)
+
+q2mod1 = randomForest(Position ~., data = train2, importance = T)
+q2mod1_predTrain <- predict(q2mod1, train2, type = "class")
+q2mod1_pred <- predict(q2mod1, test2, type = "class")
+#mean(q2mod1_predTrain == train2$Position)                    
+#mean(q2mod1_pred == test2$Position) 
+test2$position_prediction = q2mod1_pred
+table = data.frame(confusionMatrix(q2mod1_pred,test2$Position)$table)
+
+#table$Prediction = c("G", "F", "C","G", "F", "C","G", "F", "C")
+#table$Reference = c("G" ,"G", "G", "F", "F", "F", "C", "C", "C")
+
+
+plotTable <- table %>%
+  mutate(Key = ifelse(table$Prediction == table$Reference, "Correct", "Incorrect")) %>%
+  group_by(Reference) %>%
+  mutate(Proportion = Freq/sum(Freq))
+
+ggplot(data = plotTable, mapping = aes(x = Reference, y = Prediction, fill = Key, alpha = Freq)) +
+  geom_tile() +
+  geom_text(aes(label = Freq), vjust = .5, fontface  = "bold", alpha = 1) +
+  scale_fill_manual(values = c(Correct = "green", Incorrect = "red")) +
+  theme_bw() +
+  ggtitle("Position Prediction Confusion Matrix\nAccuracy: 0.90") + xlab("True Position") + ylab("Predicted Position") + theme(plot.title = element_text(hjust = 0.5)) +
+  scale_x_discrete(limits = rev(levels(table$Reference)), labels = c("C", "F", "G"))+
+  scale_y_discrete(labels = c("G", "F", "C"))
+
+```
+
+```{r, echo = F, include = F}
+different_position = test2 %>%
+  filter(Position != position_prediction)
+
+different_position_final = merge(different_position, players_final, all.x = TRUE, by = c("Height_Inches", "Weight", "NBA_PPG", "NCAA_PPG" ))
+
+#different_position_final = different_position_final[,c(23, 5, 22, 1:4, 6:21)]
+```
+
+##### Model 2
+
+In today's game, teams are focusing more on skilled and versatile players who, for the most part, happen to be shorter than the players from a decade and two decades ago. This emphasis on skill and versatility has led to what we know as small ball. I wanted to create a new model that is based off of some of the most successful and innovative small ball lineups. The training data from the first random forest model included players dating back to the 1980s when players would use their height and brute force to score. In order to create this new model, I had to train it off of small ball lineup data. The new training data included the 73-9 Golden State Warriors' lineup of death, the 2019-20 Rocket's super-small ball, Mike D'Antoni's Sun's original small ball lineup from 2005, and more. I had to go through the data and manually change a player's position to the position they played in their small ball lineup. For example, Draymond Green who typically plays forward was marked as a center for the new training data since that was what he played in the small ball lineup. My training set resulted in 34 players which is a very small size, but I wanted to make sure I had the best data to train the model. Once again, we created a random forest model that used all of the NBA and NCAA shooting data, along with height and weight, as the predictors. 
+
+The results of this new small ball position predictor was 100% accuracy on the training set and 75% accuracy on the testing. This means that based off of small ball lineups, 25% of all players may be better suited for a different position than they played. Due to the fact that the training accuracy was 100% and the testing accuracy was 75%, there may be concern of overfitting, but given that we used a random forest model, overfitting should not be a significant issue. I was expecting a low accuracy anyways since the small ball lineup is not traditional--it is more innovative and outside of the box and would result in more unexpected predictions. The confusion matrix below highlights the results of the new random forest model. One of the most intresting results is how many current forwards are predicted to play the center position (126 players) and how many guards could play the forward (124 players). Due to the model predictions, there are a handful of players who could play different positions. NBA teams could use this data for their current players and potentially make some lineup adjustments accordingly; however, there is no way to test whether a player's predicted position is actually a better fit than their typical position other than trying it in game. 
+
+```{r, echo = F, warning = F, message = F}
+smallBallPlayers = c("Kevin Durant", "Stephen Curry", "Klay Thompson", "Andre Iguodala", "Draymond Green", "Harrison Barnes", "James Harden", "Russell Westbrook", "Robert Covington", "P.J. Tucker", "Danuel House", "Kentavious Caldwell-Pope", "Danny Green", "Anthony Davis", "Kawhi Leonard", "Patrick Beverley", "Montrezl Harrel", "Paul George", "Lou Williams", "Joe Johnson", "Shawn Marion", "Steve Nash", "Quentin Richardson", "OG Anunoby", "Marc Gasol", "Kyle Lowry", "Pascal Siakam", "Fred VanVleet", "Chris Bosh", "Dwyane Wade", "Mario Chalmers", "Shane Battier", "Chris Bosh", "Kemba Walker", "Marcus Smart", "Jaylen Brown", "Jayson Tatum", "Gordon Hayward")
+
+#smallBall = players_final[players_final$Name %in% smallBallPlayers, ]
+smallBall = read_csv('small_ball_players.csv')
+smallBallTrain = smallBall[,c(3:22)]
+smallBallTrain$Position = as.factor(smallBallTrain$Position)
+
+smallBallTest = players_final[!players_final$Name %in% smallBallPlayers, ][,c(2:21)]
+smallBallTest$Position = sapply(smallBallTest$Position, primary_position)
+smallBallTest$Position = as.factor(smallBallTest$Position)
+
+smallMod = randomForest(Position ~., data = smallBallTrain, importance = T)
+smallMod_predTrain <- predict(smallMod, smallBallTrain, type = "class")
+smallMod_predTest <- predict(smallMod, smallBallTest, type = "class")
+#mean(smallMod_predTrain == smallBallTrain$Position)                    
+#mean(smallMod_predTest == smallBallTest$Position) 
+smallBallTest$position_prediction = smallMod_predTest
+table2 = data.frame(confusionMatrix(smallMod_predTest,smallBallTest$Position)$table)
+
+plotTable2 <- table2 %>%
+  mutate(Key = ifelse(table2$Prediction == table2$Reference, "Correct", "Incorrect")) %>%
+  group_by(Reference) %>%
+  mutate(Proportion = Freq/sum(Freq))
+
+ggplot(data = plotTable2, mapping = aes(x = Reference, y = Prediction, fill = Key, alpha = Freq)) +
+  geom_tile() +
+  geom_text(aes(label = Freq), vjust = .5, fontface  = "bold", alpha = 1) +
+  scale_fill_manual(values = c(Correct = "green", Incorrect = "red")) +
+  theme_bw() +
+  scale_x_discrete(limits = rev(levels(table$Reference)), labels = c("C", "F", "G"))+
+  scale_y_discrete(labels = c("G", "F", "C")) +
+  ggtitle("Small Ball Position Prediction Confusion Matrix\nAccuracy: 0.75") + xlab("True Position") + ylab("Predicted Position") + theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+
+# CONCLUSION
+
+In our first question, we wanted to predict a player's NBA 3-point percentage solely based on NCAA shooting statistics. Despite running various linear models, we were not able to produce a model with a correlation value over 0.33. We did not expect this result, as we thought there would be a strong relationship between NCAA shooting and NBA 3-point shooting. As stated before, maybe there is no strong predictors of NBA 3-point shooting percentages, or maybe there are some other variables that were not included in our data set that would be better predictors. Variables such as hand size, shooting arc, or release point might be more useful in predicting a player's 3-point shooting percentage than the data that we used. We also could have tried different types of models; we experiemented with polynomial models but that did not provide much better results. A different kind of model may also be necessary to adequately predict NBA 3-point percentage.  
+
+In our second question, we wanted to see if we were able to predict an NBA player's position given their NCAA and NBA statistics, along with their height and their weight. Our random forest model successfully did so, with an accuracy of 90%. This model was produced good results, but we also wanted to explore the new style of play in the NBA and how that affects positions. We created a model that was trained off of the most successful NBA small ball lineups which is a more recent phenomenon. The new model resulted in 75% accuracy, which means that if small ball basketball was universal across all teams, 25% of players would be playing a different position than they regularly play. This is quite a large discrepancy and may lead to some lineup changes if NBA teams decide to use this model to optimize a small ball lineup. 
+
+We have seen a huge shift in NBA playing style over the past five years, and there are no signs of this new style slowing down. Teams continually shoot more and more threes each season and teams are experimenting with smaller lineups. It may be better for teams to model their lineups based on the best small ball lineups, but even that may not work due to personnel limitations. Ultimately, teams will have to decide if the sacrificing size for 3-point shooting and player versatility is essential to the team's success.
+
+
+
+
+

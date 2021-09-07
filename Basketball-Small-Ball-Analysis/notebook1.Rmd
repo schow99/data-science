@@ -1,0 +1,25 @@
+---
+title: "Final Project"
+author: "Samuel Chow"
+date: "1/29/2020"
+output: html_document
+---
+
+```{r}
+library(readr)
+
+players = read_csv("players.csv")
+
+
+acc = c("Boston College", "Clemson University", "Duke University", "Florida State University", "Georgia Institute of Technology", "University of Louisville", "University of Miami", "University of North Carolina", "North Carolina State University", "	University of Pittsburgh", "	Syracuse University", "University of Virginia", "Virginia Polytechnic Institute and State University", "Wake Forest University", "University of Notre Dame")
+
+big10 = c("University of Illinois at Urbana-Champaign", "Indiana University", "University of Iowa", "University of Maryland", "University of Michigan", "University of Minnesota", "University of Nebraska", "Northwestern University", "Ohio State University", "Pennsylvania State University", "Purdue University", "Rutgers University", "University of Wisconsin")
+
+big12 = c("Baylor University", "Iowa State University", "University of Kansas", "Kansas State University", "	University of Oklahoma", "Oklahoma State University", "Texas Christian University", "University of Texas at Austin", "Texas Tech University", "West Virginia University")
+
+pac12 = c("University of Arizona", "Arizona State University", "University of California", "University of California, Los Angeles", "University of Colorado", "University of Oregon", "Oregon State University", "University of Southern California", "Stanford University", "University of Utah", "Washington State University", "University of Washington")
+
+players$power_5 = 0
+players[players$college %in% power5,]$power_5 = 1 
+```
+

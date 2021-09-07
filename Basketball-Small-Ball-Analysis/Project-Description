@@ -1,1 +1,6 @@
-This was my very first data science project! The basketball small ball analysis project looks at some of the correlations between NCAA and NBA data and explores how we can best use the data to give us more insights to how players perform in today's changing NBA game. 
+This was my very first data science project! The basketball small ball analysis project looks at some of the correlations 
+between NCAA and NBA data and explores how we can best use the data to give us more insights to how players perform in today's changing NBA game. 
+
+The final presentation is in the Final-Paper file, both in an R and in an HTML version. 
+
+Most of the analysis is done in the data_cleaning.R file. 
